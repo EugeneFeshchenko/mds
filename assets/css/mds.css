@@ -1,0 +1,50 @@
+body{
+    background-image:url("http://mds-club.ru/images/design/global_bg.gif");
+}
+
+.navbar{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.tpl{
+    display:none
+}
+
+table{
+    background:#fefefe;
+    font-family: 'PT Sans Caption', sans-serif;
+    letter-spacing:0.3px;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    vertical-align:inherit;
+}
+
+thead{
+    background:#eee;
+    font-weight:bold;
+}
+
+
+.navbar{
+    border-radius:0;
+}
+
+.navbar h2{
+    margin:7px 0;
+    color: #eee;
+}
+
+a.label-info{
+    font-size:85%;
+}
+
+.pagination-detail{
+    display:none;
+}
+
+.fixed-table-pagination .pull-right.pagination{
+    float:none !important;
+    text-align:center;
+    width:100%;
+}
