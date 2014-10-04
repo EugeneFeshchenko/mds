@@ -48,6 +48,6 @@ class MdsSpider(scrapy.Spider):
         item = response.request.meta['item']
         href = response.css('#catalogtable tbody tr:nth-child(1) td:nth-child(4)')
         href = href.xpath('a/@href').extract()[0]
-        item['link'] = href
-        item['size'] = response.css('#catalogtable tbody tr:nth-child(1) td:nth-child(5)::text').extract()[0]
+        item['link'] = {'href':href}
+        item['link']['size'] = response.css('#catalogtable tbody tr:nth-child(1) td:nth-child(5)::text').extract()[0]
         return item

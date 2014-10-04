@@ -13,7 +13,7 @@ body{
 table{
     background:#fefefe;
     font-family: 'PT Sans Caption', sans-serif;
-    letter-spacing:0.3px;
+    letter-spacing:0.5px;
 }
 
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
@@ -47,4 +47,8 @@ a.label-info{
     float:none !important;
     text-align:center;
     width:100%;
+}
+
+tr td:nth-child(4){
+    text-align:center;
 }
