@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="mdsApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,15 +10,12 @@
 
     <title>MDS</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-table.min.css" rel="stylesheet">
     <link href="assets/css/mds.css" rel="stylesheet">
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
-    <script src="assets/js/jquery-2.1.1.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/bootstrap-table.min.js"></script>
+    <script src="assets/js/angularjs.min.js"></script>
 
     <script src="assets/js/mds.js"></script>
   </head>
@@ -29,26 +26,28 @@
       <div class="container"><h2>Модель Для Сборки</h2></div>
     </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
+    <div class="container" ng-controller="mainCtrl">
       <div class="row">
-        <table class="table table-striped table-bordered" 
-               id="content" 
-               data-toggle="table"
-               data-url="data.json"
-               data-pagination="true"
-               data-search="true"
-               data-page-size="50"
-               data-show-toggle="True"
-               >
+        <table class="table table-striped table-bordered" id="content" >
           <thead>
             <tr>
-              <th data-field="number" data-width="10">№</th>
+              <th>№</th>
               <th data-field="author">Автор</th>
               <th data-field="name" >Название</th>
-              <th colspan="2" data-field="link" data-formatter="linkFormatter" data-width="90">Ссылка</th>
+              <th colspan="2" data-field="link">Ссылка</th>
             </tr>
           </thead>
+          <tbody>
+            <tr ng-repeat="book in display_books">
+              <td>{{ book.number }}</td>
+              <td>{{ book.author }}</td>
+              <td>{{ book.name }}</td>
+              <td>
+                <a href="{{ book.link.href }}">Скачать</a>
+                {{ book.link.size }}
+              </td>
+            </tr>
+          </tbody>
         </table>
 
         <footer> </footer>
