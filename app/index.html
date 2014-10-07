@@ -16,6 +16,7 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
     <script src="assets/js/angularjs.min.js"></script>
+    <script src="assets/js/ui-bootstrap.min.js"></script>
 
     <script src="assets/js/mds.js"></script>
   </head>
@@ -43,13 +44,31 @@
               <td>{{ book.author }}</td>
               <td>{{ book.name }}</td>
               <td>
-                <a href="{{ book.link.href }}">Скачать</a>
-                {{ book.link.size }}
+                <a class="label link btn" 
+                   ng-class="{'label-info':book.number!=recentNumber, 'label-success':book.number==recentNumber}"
+                   href="{{ book.link.href }}"
+                   ng-click="setActive(book.number)">
+                  <span ng-if="book.number!=recentNumber" class="glyphicon glyphicon-save"></span>
+                  <span ng-if="book.number==recentNumber" class="glyphicon glyphicon-saved"></span>
+                  Скачать
+                </a>
+                <br/>
+                <small>{{ book.link.size }}</small>
               </td>
             </tr>
           </tbody>
         </table>
-
+        
+        <div id="pagination-wrap">
+          <pagination total-items="totalItems" 
+                      items-per-page="pageSize" 
+                      ng-model="page" 
+                      previous-text="< Назад"
+                      next-text="Вперед >"
+                      max-size="10"
+                      ng-change="pageChanged()">
+          </pagination>
+        </div>
         <footer> </footer>
       </div>
     </div>

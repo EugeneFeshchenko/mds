@@ -1,13 +1,30 @@
-var mdsApp = angular.module('mdsApp', []);
+var mdsApp = angular.module('mdsApp', ['ui.bootstrap']);
 
 mdsApp.controller('mainCtrl', ['$scope', '$http', function ($scope, $http) {
     $http.get('data.json').then(function(resp){
-        $scope.page_size = 25;
-        $scope.page = localStorage['page'] ? localStorage['page'] : 0;
+        $scope.pageSize = 25;
+        $scope.page = localStorage['page'] ? localStorage['page'] : 1;
 
-        var start_index = $scope.page_size * $scope.page;
-        var end_index = $scope.page_size * $scope.page + $scope.page_size;
-        $scope.display_books = resp.data.slice(start_index, end_index);
+        $scope.recentNumber = localStorage['recentNumber'] ? localStorage['recentNumber'] : null;
+
+        $scope.totalItems = resp.data.length;
+
+        var startIndex = $scope.pageSize * ($scope.page-1);
+        var endIndex = startIndex + $scope.pageSize;
+        $scope.display_books = resp.data.slice(startIndex, endIndex);
+
+        $scope.pageChanged = function(){
+            localStorage['page'] = $scope.page;
+            var startIndex = $scope.pageSize * ($scope.page-1);
+            var endIndex = startIndex + $scope.pageSize;
+            $scope.display_books = resp.data.slice(startIndex, endIndex);
+        }
+
+        $scope.setActive = function(number){
+            $scope.recentNumber = number;
+            localStorage['recentNumber'] = number;
+
+        }
     })
 
 }]);

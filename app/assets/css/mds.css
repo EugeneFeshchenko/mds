@@ -1,3 +1,5 @@
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
 body{
     background-image:url("http://mds-club.ru/images/design/global_bg.gif");
 }
@@ -35,20 +37,14 @@ thead{
     color: #eee;
 }
 
-a.label-info{
-    font-size:85%;
-}
-
-.pagination-detail{
-    display:none;
-}
-
-.fixed-table-pagination .pull-right.pagination{
-    float:none !important;
-    text-align:center;
-    width:100%;
+a.link{
+    font-size:95%;
 }
 
 tr td:nth-child(4){
+    text-align:center;
+}
+
+#pagination-wrap{
     text-align:center;
 }
