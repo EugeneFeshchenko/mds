@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" ng-app="mdsApp">
   <head>
@@ -12,65 +11,30 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/mds.css" rel="stylesheet">
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <script src="app/angularjs.min.js"></script>
+    <script src="app/angular-ui-router.min.js"></script>
+    <script src="app/ui-bootstrap.min.js"></script>
 
-    <script src="assets/js/angularjs.min.js"></script>
-    <script src="assets/js/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <!--<script type="text/javascript" charset="utf-8" src="assets/js/phonegap-desktop.js"></script>-->
 
-    <script src="assets/js/mds.js"></script>
+    <script src="app/mds.js"></script>
   </head>
-
+  
   <body>
 
     <div class="navbar navbar-inverse" role="navigation">
-      <div class="container"><h2>Модель Для Сборки</h2></div>
+      <div class="container"><h2>Модель Для Сборки<small> - архив записей</small></h2></div>
     </div>
 
-    <div class="container" ng-controller="mainCtrl">
-      <div class="row">
-        <table class="table table-striped table-bordered" id="content" >
-          <thead>
-            <tr>
-              <th>№</th>
-              <th data-field="author">Автор</th>
-              <th data-field="name" >Название</th>
-              <th colspan="2" data-field="link">Ссылка</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr ng-repeat="book in display_books">
-              <td>{{ book.number }}</td>
-              <td>{{ book.author }}</td>
-              <td>{{ book.name }}</td>
-              <td>
-                <a class="label link btn" 
-                   ng-class="{'label-info':book.number!=recentNumber, 'label-success':book.number==recentNumber}"
-                   href="{{ book.link.href }}"
-                   ng-click="setActive(book.number)">
-                  <span ng-if="book.number!=recentNumber" class="glyphicon glyphicon-save"></span>
-                  <span ng-if="book.number==recentNumber" class="glyphicon glyphicon-saved"></span>
-                  Скачать
-                </a>
-                <br/>
-                <small>{{ book.link.size }}</small>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        
-        <div id="pagination-wrap">
-          <pagination total-items="totalItems" 
-                      items-per-page="pageSize" 
-                      ng-model="page" 
-                      previous-text="< Назад"
-                      next-text="Вперед >"
-                      max-size="10"
-                      ng-change="pageChanged()">
-          </pagination>
-        </div>
-        <footer> </footer>
-      </div>
-    </div>
-  </body>
+    <ul>
+      <li><a ui-sref="default()">Default</a></li>
+    </ul>
+    
+    <div class="container" ui-view></div>
+    
+    <footer> </footer>
+</div>
+
+</body>
 </html>

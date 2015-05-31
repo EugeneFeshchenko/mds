@@ -1,32 +1,42 @@
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('../fonts/OpenSans-CondLight.ttf'); 
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('../fonts/EBGaramond-Regular.ttf'); 
+}
+
 body{
-    background-image:url("http://mds-club.ru/images/design/global_bg.gif");
+    background-image:url("../img/global_bg.gif");
 }
 
 .navbar{
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.tpl{
-    display:none
-}
-
-table{
-    background:#fefefe;
-    font-family: 'PT Sans Caption', sans-serif;
+.main{
     letter-spacing:0.5px;
+    padding:0;
 }
 
-.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
-    vertical-align:inherit;
+.main .row.book{
+    padding:15px 0;
+    border-radius:5px;
+    background:#fefefe;
+    margin:3px 0;
 }
 
-thead{
-    background:#eee;
-    font-weight:bold;
+.container .main .row.book.current{
+    background:url('../img/ribbon.png') 60% -6px no-repeat #fff4d3;
 }
 
+.main .row.book:nth-child(even){
+    background-color:#f9f9f9;
+}
 
 .navbar{
     border-radius:0;
@@ -37,14 +47,48 @@ thead{
     color: #eee;
 }
 
-a.link{
-    font-size:95%;
-}
-
-tr td:nth-child(4){
-    text-align:center;
-}
-
 #pagination-wrap{
     text-align:center;
+    font-size:18px;
+}
+
+.dwnl{
+    padding-left:0;
+}
+
+.author{
+    font-size:13px;
+    position:relative;
+    left:5px;
+    top:3px;
+}
+
+.author .number{
+    font-size:13px;
+}
+
+.name{
+    font-size:18px;
+    font-family: 'EB Garamond', serif;
+    margin:10px 0 0 10px;
+}
+
+.bookname{    
+    border-bottom:1px solid ##333;
+    letter-spacing:1px;
+}
+
+.col-sx-8.description{
+    padding-right:0;
+}
+
+.progress{
+    height:45px;
+    margin:0;
+}
+
+.progress .progress-bar span{
+    display:block;
+    margin-top:15px;
+    font-size:15.3px;
 }
