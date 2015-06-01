@@ -1,0 +1,44 @@
+<h1>{{ name }} <small><a ui-sref="default()">Полный список</a></small></h1>
+
+<hr/>
+
+<div class="main">
+  <div class="row book" ng-repeat="book in books" ng-class="{'current':book.number==recentNumber}">
+    
+    <div class="col-md-8 col-xs-8 description">
+      <div class="author">
+        <span class="number">{{ book.number }}.</span>
+        <a href="#" ui-sref="author({name: book.author})">{{ book.author }}</a>
+      </div>
+      <div class="name">&ldquo; <span class="bookname">{{ book.name }}</span> &bdquo;</div>
+    </div>
+    
+    <div class="col-md-4 col-xs-4">
+      <div ng-hide="downloading.id==book.number" 
+	   class="btn btn-lg col-md-12 col-xs-12 dwnl"
+	   ng-class="{'btn-info':book.number!=recentNumber, 'btn-success':book.number==recentNumber}"
+	   ng-click="download(book)"
+	   ng-disabled="download_in_progress"
+	   >
+	
+	<div class="pull-left down-icon">
+	  <span ng-if="book.number!=recentNumber" class="glyphicon glyphicon-save"></span>
+	  <span ng-if="book.number==recentNumber" class="glyphicon glyphicon-saved"></span>
+	</div>
+	<div>
+	  <small>{{ book.link.size }}</small>
+	</div>	    
+      </div>
+      
+      
+      <div ng-show="downloading.id==book.number" >
+	<progressbar animate="false" value="downloading.progress"  type="success" class="progress-striped active">
+	  <span>
+	    {{downloading.progress}}%
+	  </span>
+	</progressbar>
+      </div>
+    </div>
+  </div>
+</div>
+<br/><br/>

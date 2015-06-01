@@ -84,6 +84,17 @@ mdsApp.config(function($stateProvider, $urlRouterProvider) {
     }
 }])
 
-.controller('authorCtrl', ['$scope', '$stateParams',function($scope, $stateParams){
-    $scope.author = $stateParams.name;
+.controller('authorCtrl', ['$scope', '$http', '$stateParams',function($scope, $http, $stateParams){
+
+    $scope.name = $stateParams.name;
+    
+    $http.get('data.json').then(function(resp){
+        var books = [];
+        
+        for (var i=0; i<resp.data.length; i++){
+            if (resp.data[i].author == $scope.name)
+            books.push(resp.data[i]);
+        }
+        $scope.books = books.sort();
+    })
 }]);
