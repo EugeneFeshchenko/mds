@@ -19,6 +19,7 @@ mdsApp.config(function($stateProvider, $urlRouterProvider) {
 
 
 .controller('mainCtrl', ['$scope', '$http', '$timeout', function ($scope, $http, $timeout) {
+        
     $http.get('data.json').then(function(resp){
         $scope.pageSize = 25;
         $scope.page = localStorage['page'] ? localStorage['page'] : 1;
@@ -64,14 +65,15 @@ mdsApp.config(function($stateProvider, $urlRouterProvider) {
 	var name = book.link.href.split('/').pop();
 	$scope.downloading = {'id':book.number, 'progress':0};
 	var uri = encodeURI(book.link.href);
-	
+
 	fileTransfer.download(
 	    uri,
 	    'cdvfile://localhost/persistent/Download/'+name,
 	    function(entry) {
                 $scope.recentNumber = book.number;
                 localStorage['recentNumber'] = book.number;	
-		alert('Загрузка завершена');
+                navigator.notification.beep(1);
+                navigator.notification.alert('Файл загружен в папку Downloads',  function(){}, 'Загрузка завершена!', 'Хорошо');
 		$scope.download_in_progress=false;
 		$scope.downloading = {'id':-1, 'progress':0};
 		$scope.$apply();
@@ -80,8 +82,15 @@ mdsApp.config(function($stateProvider, $urlRouterProvider) {
 		$scope.downloading = {'id':-1, 'progress':0};
 		$scope.$apply();
 	    }
-	);
-    }
+	);        
+    };
+
+    $scope.openFile = function(book){
+        var name = book.link.href.split('/').pop();
+        var path = 'file://localhost/persistent/Download/'+name;
+        alert(path);
+        window.plugins.fileOpener.open(path);
+    };
 }])
 
 .controller('authorCtrl', ['$scope', '$http', '$stateParams',function($scope, $http, $stateParams){
@@ -95,6 +104,7 @@ mdsApp.config(function($stateProvider, $urlRouterProvider) {
             if (resp.data[i].author == $scope.name)
             books.push(resp.data[i]);
         }
+        
         $scope.books = books.sort();
     })
 }]);

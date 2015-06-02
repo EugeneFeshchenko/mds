@@ -1,4 +1,5 @@
-<div class="main">
+<div class="main">x
+  
   <div class="row book" ng-repeat="book in display_books" ng-class="{'current':book.number==recentNumber}">
     
     <div class="col-md-8 col-xs-8 description">
@@ -11,7 +12,7 @@
     
     <div class="col-md-4 col-xs-4">
       <div ng-hide="downloading.id==book.number" 
-	   class="btn btn-lg col-md-12 col-xs-12 dwnl"
+	   class="btn btn-lg col-md-12 col-xs-12"
 	   ng-class="{'btn-info':book.number!=recentNumber, 'btn-success':book.number==recentNumber}"
 	   ng-click="download(book)"
 	   ng-disabled="download_in_progress"
@@ -22,7 +23,7 @@
 	  <span ng-if="book.number==recentNumber" class="glyphicon glyphicon-saved"></span>
 	</div>
 	<div>
-	  <small>{{ book.link.size }}</small>
+	  <small>{{ book.link.size }}Mb</small>
 	</div>	    
       </div>
       
