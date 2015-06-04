@@ -43,12 +43,11 @@ mdsApp.config(function($stateProvider, $urlRouterProvider) {
             var endIndex = startIndex + $scope.pageSize;
             $scope.display_books = resp.data.slice(startIndex, endIndex);
         }
+
         $timeout(function(){
             var currentElement = angular.element(document.getElementsByClassName('current'));
             $document.scrollToElement(currentElement, 50, 50);
         }, 50);
-        
-
         
         $scope.pageChanged = function(){
             localStorage['page'] = $scope.page;
@@ -78,7 +77,7 @@ mdsApp.config(function($stateProvider, $urlRouterProvider) {
 
     $scope.download = function(book){
 	$scope.download_in_progress=true;
-	var name = book.link.href.split('/').pop();
+	var name = book.author+'-'+book.name+'.mp3';
 	$scope.downloading = {'id':book.number, 'progress':0};
 	var uri = encodeURI(book.link.href);
 
