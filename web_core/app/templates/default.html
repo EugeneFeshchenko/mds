@@ -1,11 +1,21 @@
-<div class="main">x
+<h1 ng-show="name">{{ name }}</h1>
+
+<h3 ng-show="name">
+  <a ui-sref="list()">
+    Все авторы
+  </a>
+</h3>
+
+<hr ng-show="name" />
+
+<div class="main">
   
   <div class="row book" ng-repeat="book in display_books" ng-class="{'current':book.number==recentNumber}">
     
     <div class="col-md-8 col-xs-8 description">
       <div class="author">
         <span class="number">{{ book.number }}.</span>
-        <a href="#" ui-sref="author({name: book.author})">{{ book.author }}</a>
+        <a href="#" ui-sref="author({author: book.author})">{{ book.author }}</a>
       </div>
       <div class="name">&ldquo; <span class="bookname">{{ book.name }}</span> &bdquo;</div>
     </div>
@@ -39,7 +49,7 @@
   </div>
 </div>        
 
-<div id="pagination-wrap">
+<div id="pagination-wrap" ng-hide="name">
   <pagination total-items="totalItems" 
               items-per-page="pageSize" 
               ng-model="page" 

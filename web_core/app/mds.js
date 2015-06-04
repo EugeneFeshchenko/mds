@@ -1,37 +1,55 @@
-var mdsApp = angular.module('mdsApp', ['ui.bootstrap', 'ui.router']);
+var mdsApp = angular.module('mdsApp', ['ui.bootstrap', 'ui.router', 'duScroll']);
 
 mdsApp.config(function($stateProvider, $urlRouterProvider) {
-
+    
     $urlRouterProvider.otherwise("/");
 
     $stateProvider
-        .state('default', {
+        .state('list', {
             url: "/",
             templateUrl: "app/templates/default.html",
             controller: 'mainCtrl',
         })
         .state('author', {
-            url: "/author/:name/",
-            templateUrl: "app/templates/author.html",
-            controller: 'authorCtrl',
+            url: "/author/:author",
+            templateUrl: "app/templates/default.html",
+            controller: 'mainCtrl',
         })
 })
 
 
-.controller('mainCtrl', ['$scope', '$http', '$timeout', function ($scope, $http, $timeout) {
-        
+.controller('mainCtrl', ['$scope', '$http', '$timeout', '$stateParams', '$document', function ($scope, $http, $timeout, $stateParams, $document) {
+
+    $scope.name = $stateParams.author;
+
     $http.get('data.json').then(function(resp){
-        $scope.pageSize = 25;
-        $scope.page = localStorage['page'] ? localStorage['page'] : 1;
-        
-        $scope.recentNumber = localStorage['recentNumber'] ? localStorage['recentNumber'] : null;
-        
-        $scope.totalItems = resp.data.length;
+        if ($scope.name){
+            var books = [];        
+            for (var i=0; i<resp.data.length; i++){
+                if (resp.data[i].author == $scope.name)
+                    books.push(resp.data[i]);
+            }      
+            $scope.display_books = books.sort();
+        }
+        else{
+            $scope.pageSize = 25;
+            $scope.page = localStorage['page'] ? localStorage['page'] : 1;
 
-        var startIndex = $scope.pageSize * ($scope.page-1);
-        var endIndex = startIndex + $scope.pageSize;
-        $scope.display_books = resp.data.slice(startIndex, endIndex);
+            $scope.recentNumber = localStorage['recentNumber'] ? localStorage['recentNumber'] : null;
 
+            $scope.totalItems = resp.data.length;
+
+            var startIndex = $scope.pageSize * ($scope.page-1);
+            var endIndex = startIndex + $scope.pageSize;
+            $scope.display_books = resp.data.slice(startIndex, endIndex);
+        }
+        $timeout(function(){
+            var currentElement = angular.element(document.getElementsByClassName('current'));
+            $document.scrollToElement(currentElement, 50, 50);
+        }, 50);
+        
+
+        
         $scope.pageChanged = function(){
             localStorage['page'] = $scope.page;
             var startIndex = $scope.pageSize * ($scope.page-1);
@@ -40,7 +58,6 @@ mdsApp.config(function($stateProvider, $urlRouterProvider) {
         }
     })
 
-    	
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
 	fileTransfer = new FileTransfer();
@@ -58,8 +75,7 @@ mdsApp.config(function($stateProvider, $urlRouterProvider) {
 	    };	
 	}; 
     }
-    
-    
+
     $scope.download = function(book){
 	$scope.download_in_progress=true;
 	var name = book.link.href.split('/').pop();
@@ -85,26 +101,4 @@ mdsApp.config(function($stateProvider, $urlRouterProvider) {
 	);        
     };
 
-    $scope.openFile = function(book){
-        var name = book.link.href.split('/').pop();
-        var path = 'file://localhost/persistent/Download/'+name;
-        alert(path);
-        window.plugins.fileOpener.open(path);
-    };
 }])
-
-.controller('authorCtrl', ['$scope', '$http', '$stateParams',function($scope, $http, $stateParams){
-
-    $scope.name = $stateParams.name;
-    
-    $http.get('data.json').then(function(resp){
-        var books = [];
-        
-        for (var i=0; i<resp.data.length; i++){
-            if (resp.data[i].author == $scope.name)
-            books.push(resp.data[i]);
-        }
-        
-        $scope.books = books.sort();
-    })
-}]);
