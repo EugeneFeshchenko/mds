@@ -9,6 +9,8 @@ def change():
         d = json.loads(d)
 
     d.sort(key=lambda x:  x['number'])
+    for node in d:
+        node['downloaded'] = False
 
     with codecs.open('data_new.json', 'w+', encoding='utf-8') as f:
         f.write(json.dumps(d, ensure_ascii=False, indent=2))
