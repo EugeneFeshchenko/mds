@@ -1,13 +1,13 @@
 [
   {
-    "downloaded": false, 
+    "downloaded": 'err',
     "author": "Леонид Каганов", 
     "link": "ftp://mds:mds@mds.kallisto.ru/hell/2018/06/01_Leonid_Kaganov_-_Limonnaya_planeta.mp3", 
     "number": 1, 
     "name": "Лимонная планета"
   }, 
   {
-    "downloaded": true, 
+    "downloaded": true,
     "author": "Сергей Чекмаев", 
     "link": "http://mds.kallisto.ru/hell/2018/04/01_Sergey_Chekmaev_-_Neizbezhnie_na_more_sluchaynosti.mp3", 
     "number": 2, 
@@ -28,7 +28,7 @@
     "name": "Беспризорники"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Джек Макдевитт", 
     "link": "ftp://mds:mds@mds.kallisto.ru/hell/2018/01/01_Dzhek_Makdevitt_-_Slushayte_pridurki.mp3", 
     "number": 5, 
@@ -56,245 +56,245 @@
     "name": "Дети"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Ирина Бакулина", 
     "link": "http://mds.kallisto.ru/hell/2017/10/03_Irina_Bakulina_-_Renegat.mp3", 
     "number": 9, 
     "name": "Ренегат"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Леонид Каганов", 
     "link": "http://mds.kallisto.ru/hell/2017/09/01_Leonid_Kaganov_-_Tanketka.mp3", 
     "number": 10, 
     "name": "Танкетка"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Сергей Битюцкий", 
     "link": "http://mds.kallisto.ru/hell/2017/09/02_Sergey_Bityutckiy_-_Kogda_rastcvetayut_bombi.mp3", 
     "number": 11, 
     "name": "Когда расцветают бомбы"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Олег Дивов", 
     "link": "http://mds.kallisto.ru/hell/2017/04/01_Oleg Divov_-_Zanimatelnaya_logistika.mp3", 
     "number": 12, 
     "name": "Занимательная логистика"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Сергей Игнатьев", 
     "link": "http://mds.kallisto.ru/hell/2017/04/02_Sergej_Ignatev_-_Lux_Aeterna.mp3", 
     "number": 13, 
     "name": "Lux Aeterna"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Г. Л. Олди, Марина и Сергей Дяченко", 
     "link": "http://mds.kallisto.ru/hell/podcast/283_GL_Oldi_Marina_i_Sergey_Dyachenko_-_Plamenniy_Motor_(Chast_2).mp3", 
     "number": 14, 
     "name": "Пламенный мотор (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Г. Л. Олди, Марина и Сергей Дяченко", 
     "link": "ftp://mds:mds@mds.kallisto.ru/hell/podcast/282_GL_Oldi_Marina_i_Sergey_Dyachenko_-_Plamenniy_Motor_(Chast_1).mp3", 
     "number": 15, 
     "name": "Пламенный мотор (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Вадим Панов", 
     "link": "ftp://mds:mds@mds.kallisto.ru/hell//2014/09/01_Vadim_Panov_-_Angel.mp3", 
     "number": 16, 
     "name": "Ангел"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Леонид Каганов", 
     "link": "http://mds.kallisto.ru/hell//2014/09/02_Leonid_Kaganov_-_Vrag_blizko.mp3", 
     "number": 17, 
     "name": "Враг близко"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Антон Фарб, Нина Цюрупа", 
     "link": "http://mds.kallisto.ru/hell/2014/06/01_Anton_Farb_Nika_Tcyurupa_-_Divnij_vkusnij_mir.mp3", 
     "number": 18, 
     "name": "Дивный вкусный мир"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Мерси Шелли", 
     "link": "http://mds.kallisto.ru/hell/2014/05/01_Mersi_Shelli_-_Hajkaj.mp3", 
     "number": 19, 
     "name": "Хайкай"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Брюс Стерлинг", 
     "link": "http://mds.kallisto.ru/hell/2014/05/02_Bryus_Sterling_-_Maneki-neko.mp3", 
     "number": 20, 
     "name": "Манеки-Неко"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Артем Белоглазов", 
     "link": "http://mds.kallisto.ru/hell/podcast/281_Artem_Beloglazov_-_Snova_osen.mp3", 
     "number": 21, 
     "name": "Снова осень"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Леонид Каганов", 
     "link": "http://mds.kallisto.ru/hell/2014/03/01_Leonid_Kaganov_-_Prodavetc_sluchajnih_chisel.mp3", 
     "number": 22, 
     "name": "Продавец случайных чисел"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Пол Ди Филиппо", 
     "link": "http://mds.kallisto.ru/hell/2014/03/02_Pol_Di_Filippo_-_Zhizn_v_vek_karbina.mp3", 
     "number": 23, 
     "name": "Жизнь в век Карбина"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Пол Ди Филиппо", 
     "link": "http://mds.kallisto.ru/hell/2014/03/03_Pol_Di_Filippo_-_Volnovik.mp3", 
     "number": 24, 
     "name": "Волновик"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Олег Кожин", 
     "link": "http://mds.kallisto.ru/hell/podcast/280_Oleg_Kozhin_-_Suchyonysh_(Chast_2).mp3", 
     "number": 25, 
     "name": "Сучёныш (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Олег Кожин", 
     "link": "http://mds.kallisto.ru/hell/podcast/279_Oleg_Kozhin_-_Suchyonysh_(Chast_1).mp3", 
     "number": 26, 
     "name": "Сучёныш (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Иван Давыдов", 
     "link": "http://mds.kallisto.ru/hell/2014/01/01_Ivan_Davidov_-_Smert_gimnosofista.mp3", 
     "number": 27, 
     "name": "Смерть гимнософиста"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Олег Дивов", 
     "link": "ftp://mds:mds@mds.kallisto.ru/hell/2014/01/02_Oleg_Divov_-_Bogi_vojni.mp3", 
     "number": 28, 
     "name": "Боги войны"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Юлиана Лебединская", 
     "link": "http://mds.kallisto.ru/hell/podcast/278_Yuliana_Lebedinskaya_-_Tvorcy_i_Cheloveki_(Chast_2).mp3", 
     "number": 29, 
     "name": "Творцы и Человеки (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Юлиана Лебединская", 
     "link": "http://mds.kallisto.ru/hell/podcast/277_Yuliana_Lebedinskaya_-_Tvorcy_i_Cheloveki_(Chast_1).mp3", 
     "number": 30, 
     "name": "Творцы и Человеки (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Михаил Кликин", 
     "link": "http://mds.kallisto.ru/hell/podcast/276_Mihail_Klikin_-_Konservy_(Chast_2).mp3", 
     "number": 31, 
     "name": "Консервы (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Михаил Кликин", 
     "link": "http://mds.kallisto.ru/hell/podcast/275_Mihail_Klikin_-_Konservy_(Chast_1).mp3", 
     "number": 32, 
     "name": "Консервы (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Александр Бачило", 
     "link": "http://mds.kallisto.ru/hell/2013/09/01_Aleksandr_Bachilo_-_Priprava.mp3", 
     "number": 33, 
     "name": "Приправа"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Татьяна Кигим", 
     "link": "http://mds.kallisto.ru/hell/2013/09/02_Tatyana_Kigim_-_V_Amerike_seksa_net_(fragmenti).mp3", 
     "number": 34, 
     "name": "В Америке секса нет (фрагмент)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Урсула Ле Гуин", 
     "link": "http://mds.kallisto.ru/hell/2013/09/03_Ursula_Le_Guin_-_Napravlenie_dorogi.mp3", 
     "number": 35, 
     "name": "Направление пути"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Ольга Громыко", 
     "link": "http://mds.kallisto.ru/hell/podcast/274_Olga_Gromyko_-_Odin_k_dvum_(Chast_2).mp3", 
     "number": 36, 
     "name": "Один к двум (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Ольга Громыко", 
     "link": "http://mds.kallisto.ru/hell/podcast/273_Olga_Gromyko_-_Odin_k_dvum_(Chast_1).mp3", 
     "number": 37, 
     "name": "Один к двум (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Бертрам Флетчер Робинсон", 
     "link": "http://mds.kallisto.ru/hell/podcast/272_Bertram_Fletcher_Robinson_-_Bitva_u_mosta_cherez_ruchei_(Chast_2).mp3", 
     "number": 38, 
     "name": "Битва у моста через ручей (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Бертрам Флетчер Робинсон", 
     "link": "http://mds.kallisto.ru/hell/podcast/271_Bertram_Fletcher_Robinson_-_Bitva_u_mosta_cherez_ruchei_(Chast_1).mp3", 
     "number": 39, 
     "name": "Битва у моста через ручей (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Редьярд Киплинг", 
     "link": "http://mds.kallisto.ru/hell/podcast/270_Redyard_Kipling_-_Pocelui_fei_(Chast_2).mp3", 
     "number": 40, 
     "name": "Поцелуй фей (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Редьярд Киплинг", 
     "link": "http://mds.kallisto.ru/hell/podcast/269_Redyard_Kipling_-_Pocelui_fei_(Chast_1).mp3", 
     "number": 41, 
     "name": "Поцелуй фей (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Артур Конан Дойль", 
     "link": "http://mds.kallisto.ru/hell/podcast/268_Artur_Konan_Doil_-_Dinamitnyi_vecher_nakanune_rozhdestva_(Chast_2).mp3", 
     "number": 42, 
     "name": "Динамитный вечер накануне рождества (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Артур Конан Дойль", 
     "link": "ftp://mds:mds@mds.kallisto.ru/hell/podcast/267_Artur_Konan_Doil_-_Dinamitnyi_vecher_nakanune_rozhdestva_(Chast_1).mp3", 
     "number": 43, 
@@ -308,49 +308,49 @@
     "name": "Испытано на себе (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Эдгар По", 
     "link": "http://mds.kallisto.ru/hell/2013/04/01_Edgar_Po_-_Gibel_Esherova_doma.mp3", 
     "number": 45, 
     "name": "Падение дома Ашеров"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Ярослав Веров", 
     "link": "http://mds.kallisto.ru/hell/2013/04/02_Yaroslav_Verov_-_Prizhiznennaya_slava.mp3", 
     "number": 46, 
     "name": "Прижизненная слава"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Ник Перумов", 
     "link": "http://mds.kallisto.ru/hell/podcast/265_Nik_Perumov_-_Ispytano_na_sebe_(Chast_1).mp3", 
     "number": 47, 
     "name": "Испытано на себе (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Юрий и Татьяна Бурносовы", 
     "link": "ftp://mds:mds@mds.kallisto.ru/hell/podcast/264_Yurii_i_Tatyana_Burnosovy_-_Svetlyi_put.mp3", 
     "number": 48, 
     "name": "Светлый путь"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Тим Скоренко", 
     "link": "ftp://mds:mds@mds.kallisto.ru/hell/podcast/263_Tim_Skorenko_-_Gospodin_Odinochestvo_(Chast_2).mp3", 
     "number": 49, 
     "name": "Господин Одиночество (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Тим Скоренко", 
     "link": "ftp://mds:mds@mds.kallisto.ru/hell/podcast/262_Tim_Skorenko_-_Gospodin_Odinochestvo_(Chast_1).mp3", 
     "number": 50, 
     "name": "Господин Одиночество (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Дэн Шорин", 
     "link": "ftp://mds:mds@mds.kallisto.ru/hell/podcast/261_Den_Shorin_-_Koty_ne_umeyut_ulybatsya.mp3", 
     "number": 51, 
@@ -392,7 +392,7 @@
     "name": "Ключ от рая (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Павел Корнев", 
     "link": "ftp://mds:mds@mds.kallisto.ru/hell/podcast/255_Pavel_Kornev_-_Autodafe.mp3", 
     "number": 57, 
@@ -413,126 +413,126 @@
     "name": "Северный ветер (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Андрей Дашков", 
     "link": "ftp://mds:mds@mds.kallisto.ru/hell/podcast/252_Andrei_Dashkov_-_Mest_invalida.mp3", 
     "number": 60, 
     "name": "Месть инвалида"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Олег Дивов", 
     "link": "http://mds.kallisto.ru/hell/podcast/251_Oleg_Divov_-_Mezhdu_dyavolom_i_glubokim_sinim_morem_(chast_4).mp3", 
     "number": 61, 
     "name": "Между дьяволом и глубоким синим морем (Часть 4)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Олег Дивов", 
     "link": "http://mds.kallisto.ru/hell/podcast/250_Oleg_Divov_-_Mezhdu_dyavolom_i_glubokim_sinim_morem_(chast_3).mp3", 
     "number": 62, 
     "name": "Между дьяволом и глубоким синим морем (Часть 3)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Олег Дивов", 
     "link": "http://mds.kallisto.ru/hell/podcast/249_Oleg_Divov_-_Mezhdu_dyavolom_i_glubokim_sinim_morem_(chast_2).mp3", 
     "number": 63, 
     "name": "Между дьяволом и глубоким синим морем (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Олег Дивов", 
     "link": "http://mds.kallisto.ru/hell/podcast/248_Oleg_Divov_-_Mezhdu_dyavolom_i_glubokim_sinim_morem_(chast_1).mp3", 
     "number": 64, 
     "name": "Между дьяволом и глубоким синим морем (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Майк Гелприн", 
     "link": "http://mds.kallisto.ru/hell/podcast/247_Maik_Gelprin_-_Smert_na_shesteryh_(chast_2).mp3", 
     "number": 65, 
     "name": "Смерть на шестерых (часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Майк Гелприн", 
     "link": "http://mds.kallisto.ru/hell/podcast/246_Maik_Gelprin_-_Smert_na_shesteryh_(chast_1).mp3", 
     "number": 66, 
     "name": "Смерть на шестерых (часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Максим Хорсун", 
     "link": "http://mds.kallisto.ru/hell/podcast/245_Maksim_horsun_-_Klinopis_(Chast_3).mp3", 
     "number": 67, 
     "name": "Клинопись (Часть 3)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Максим Хорсун", 
     "link": "http://mds.kallisto.ru/hell/podcast/244_Maksim_horsun_-_Klinopis_(Chast_2).mp3", 
     "number": 68, 
     "name": "Клинопись (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Максим Хорсун", 
     "link": "http://mds.kallisto.ru/hell/podcast/243_Maksim_horsun_-_Klinopis_(Chast_1).mp3", 
     "number": 69, 
     "name": "Клинопись (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Сергей Чекмаев", 
     "link": "http://mds.kallisto.ru/hell/podcast/242_Sergei_Chekmaev_-_Potomstvennyi_prisyazhnyi.mp3", 
     "number": 70, 
     "name": "Потомственный присяжный"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Леонид Каганов", 
     "link": "http://mds.kallisto.ru/hell/podcast/241_Leonid_Kaganov_-_Kogda_menya_otpustit_(Chast_2).mp3", 
     "number": 71, 
     "name": "Когда меня отпустит (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Леонид Каганов", 
     "link": "http://mds.kallisto.ru/hell/podcast/240_Leonid_Kaganov_-_Kogda_menya_otpustit_(Chast_1).mp3", 
     "number": 72, 
     "name": "Когда меня отпустит (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Марина Ясинская и Майк Гелприн", 
     "link": "http://mds.kallisto.ru/hell/podcast/239_Marina_Yasinskaya_i_Maik_Gelprin_-_Vosemnadcat_pul_v_golovu_(Chast_3).mp3", 
     "number": 73, 
     "name": "Восемнадцать пуль в голову (Часть 3)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Марина Ясинская и Майк Гелприн", 
     "link": "http://mds.kallisto.ru/hell/podcast/238_Marina_Yasinskaya_i_Maik_Gelprin_-_Vosemnadcat_pul_v_golovu_(Chast_2).mp3", 
     "number": 74, 
     "name": "Восемнадцать пуль в голову (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Марина Ясинская и Майк Гелприн", 
     "link": "http://mds.kallisto.ru/hell/podcast/237_Marina_Yasinskaya_i_Maik_Gelprin_-_Vosemnadcat_pul_v_golovu_(Chast_1).mp3", 
     "number": 75, 
     "name": "Восемнадцать пуль в голову (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Катерина Довжук", 
     "link": "http://mds.kallisto.ru/hell/podcast/236_Katerina_Dovzhuk_-_Kachibeiskaya_opera_(Chast_2).mp3", 
     "number": 76, 
     "name": "Качибейская опера (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Катерина Довжук", 
     "link": "http://mds.kallisto.ru/hell/podcast/235_Katerina_Dovzhuk_-_Kachibeiskaya_opera_(Chast_1).mp3", 
     "number": 77, 
@@ -546,42 +546,42 @@
     "name": "Экоцентр"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Леонид Каганов", 
     "link": "http://mds.kallisto.ru/hell/podcast/233_Leonid_Kaganov_-_Gastarbaiter.mp3", 
     "number": 79, 
     "name": "Гастарбайтер"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Джером К. Джером", 
     "link": "ftp://mds:mds@mds.kallisto.ru/pionerfm/Dzherom_K._Dzherom_-_Kot_Dika_Dankermana.mp3", 
     "number": 80, 
     "name": "Кот Дика Данкермана"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Роберт Льюис Стивенсон", 
     "link": "ftp://mds:mds@mds.kallisto.ru/pionerfm/Robert_Ljuis_Stivenson_-_Dom_Starosti.mp3", 
     "number": 81, 
     "name": "Дом старости"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Александр Бачило", 
     "link": "http://mds.kallisto.ru/hell/podcast/232_Aleksandr_Bachilo_-_Mercayushhii.mp3", 
     "number": 82, 
     "name": "Мерцающий"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Дарья Булатникова", 
     "link": "ftp://mds:mds@mds.kallisto.ru/pionerfm/Darjya_Bulatnikova_-_Zapah_uglya,vkus_krovi.mp3", 
     "number": 83, 
     "name": "Запах угля, вкус крови"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Сергей Чекмаев", 
     "link": "http://mds.kallisto.ru/hell/podcast/231_Sergei_Chekmaev_-_Laureat.mp3", 
     "number": 84, 
@@ -595,28 +595,28 @@
     "name": "Посредник"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Эрих Мария Ремарк", 
     "link": "http://mds.kallisto.ru/hell/podcast/230_Erih_Mariya_Remark_-_Smert_vzaimy_(Chast_2).mp3", 
     "number": 86, 
     "name": "Смерть взаймы (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Иван Наумов", 
     "link": "ftp://mds:mds@mds.kallisto.ru/pionerfm/Ivan_Naumov_-_Mumbachija_ploscshadka.mp3", 
     "number": 87, 
     "name": "Мумбачья площадка"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Эрих Мария Ремарк", 
     "link": "http://mds.kallisto.ru/hell/podcast/229_Erih_Mariya_Remark_-_Smert_vzaimy_(Chast_1).mp3", 
     "number": 88, 
     "name": "Смерть взаймы (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Михаил Кликин", 
     "link": "ftp://mds:mds@mds.kallisto.ru/pionerfm/Mihail_Klikin_-_Nash_Upyr.mp3", 
     "number": 89, 
@@ -637,63 +637,63 @@
     "name": "Плесень Бадамы (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Артур Конан Дойл", 
     "link": "ftp://mds:mds@mds.kallisto.ru/pionerfm/Artur_K.Doyle_-_Literaturnaya_smes.mp3", 
     "number": 92, 
     "name": "Литературная смесь"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Мария Гинзбург", 
     "link": "ftp://mds:mds@mds.kallisto.ru/pionerfm/Maria_Ginzburg_-_Erih-Maria_Remark-Smert_Vzaimy.mp3", 
     "number": 93, 
     "name": "Э.М.Ремарк - Смерть Взаймы"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Сергей Чекмаев", 
     "link": "ftp://mds:mds@mds.kallisto.ru/pionerfm/Sergey_Chekmaev_-_Laureat.mp3", 
     "number": 94, 
     "name": "Лауреат"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Дмитрий Володихин", 
     "link": "ftp://mds:mds@mds.kallisto.ru/pionerfm/Dmitrij_Volodihin_-_Desantno-shturmovoj_bljuz.mp3", 
     "number": 95, 
     "name": "Десантно-штурмовой блюз"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Леонид Каганов", 
     "link": "ftp://mds:mds@mds.kallisto.ru/pionerfm/Leonid_Kaganov_-_Dalekaya_geyParaduga.mp3", 
     "number": 96, 
     "name": "Далёкая гейПарадуга"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Алексей Пехов", 
     "link": "ftp://mds:mds@mds.kallisto.ru/hell/podcast/226_Aleksei_Pehov_-_Vedmin_Yar_(Chast_4).mp3", 
     "number": 97, 
     "name": "Ведьмин Яр (Часть 4)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Алексей Пехов", 
     "link": "http://mds.kallisto.ru/hell/podcast/225_Aleksei_Pehov_-_Vedmin_Yar_(Chast_3).mp3", 
     "number": 98, 
     "name": "Ведьмин Яр (Часть 3)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Алексей Пехов", 
     "link": "http://mds.kallisto.ru/hell/podcast/224_Aleksei_Pehov_-_Vedmin_Yar_(Chast_2).mp3", 
     "number": 99, 
     "name": "Ведьмин Яр (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Алексей Пехов", 
     "link": "ftp://mds:mds@mds.kallisto.ru/hell/podcast/223_Aleksei_Pehov_-_Vedmin_Yar_(Chast_1).mp3", 
     "number": 100, 
@@ -721,70 +721,70 @@
     "name": "До последней звезды (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Виталий Зыков", 
     "link": "http://mds.kallisto.ru/hell/podcast/219_Vitalii_Zykov_-_Nasledstvo_bratstva_sumerek_(Chast_2).mp3", 
     "number": 104, 
     "name": "Наследство братства сумерек (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Виталий Зыков", 
     "link": "http://mds.kallisto.ru/hell/podcast/218_Vitalii_Zykov_-_Nasledstvo_bratstva_sumerek_(Chast_1).mp3", 
     "number": 105, 
     "name": "Наследство братства сумерек (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Павел Корнев", 
     "link": "http://mds.kallisto.ru/hell/podcast/217_Pavel_Kornev_-_Oderzhimost_(Chast_2).mp3", 
     "number": 106, 
     "name": "Одержимость (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Павел Корнев", 
     "link": "http://mds.kallisto.ru/hell/podcast/216_Pavel_Kornev_-_Oderzhimost_(Chast_1).mp3", 
     "number": 107, 
     "name": "Одержимость (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Леонид Каганов", 
     "link": "http://mds.kallisto.ru/hell/podcast/215_Leonid_Kaganov_-_Delo_pravoe_(Chast_2).mp3", 
     "number": 108, 
     "name": "Дело правое (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Леонид Каганов", 
     "link": "http://mds.kallisto.ru/hell/podcast/214_Leonid_Kaganov_-_Delo_pravoe_(Chast_1).mp3", 
     "number": 109, 
     "name": "Дело правое (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Виктор Войников", 
     "link": "http://mds.kallisto.ru/hell/podcast/213_Viktor_Voinikov_-_Rezonans.mp3", 
     "number": 110, 
     "name": "Резонанс"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Андрей Егоров", 
     "link": "http://mds.kallisto.ru/hell/podcast/212_Andrei_Egorov_-_Moi_personalnyi_kloun_(Chast_2).mp3", 
     "number": 111, 
     "name": "Мой персональный клоун (Часть 2)"
   }, 
   {
-    "downloaded": false, 
-    "author": "Андрей Егоров", 
+    "downloaded": true,
+    "author": "Андрей Егоров",
     "link": "http://mds.kallisto.ru/hell/podcast/211_Andrei_Egorov_-_Moi_personalnyi_kloun_(Chast_1).mp3", 
     "number": 112, 
     "name": "Мой персональный клоун (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Татьяна Кигим", 
     "link": "http://mds.kallisto.ru/hell/podcast/210_Tatyana_Kigim_-_Singulyarnaya_nevozmozhnost.mp3", 
     "number": 113, 
@@ -805,70 +805,70 @@
     "name": "Одна шестьсот двадцать седьмая процента"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Алексей Толкачев", 
     "link": "ftp://mds:mds@mds.kallisto.ru/hell/podcast/207_Aleksei_Tolkachev_-_Rabotaem.mp3", 
     "number": 116, 
     "name": "Работаем"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Сергей Волков", 
     "link": "http://mds.kallisto.ru/hell/podcast/206_Sergei_Volkov_-_Sorok_odin.mp3", 
     "number": 117, 
     "name": "Сорок один"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Леонид Каганов", 
     "link": "http://mds.kallisto.ru/hell/podcast/205_Leonid_Kaganov_-_Magiya_(Chast_2).mp3", 
     "number": 118, 
     "name": "Магия (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Леонид Каганов", 
     "link": "http://mds.kallisto.ru/hell/podcast/204_Leonid_Kaganov_-_Magiya_(Chast_1).mp3", 
     "number": 119, 
     "name": "Магия (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Татьяна Томах", 
     "link": "http://mds.kallisto.ru/hell/podcast/203_Tatyana_Tomah_-_Svetlyi_shelk_neba_(Chast_2).mp3", 
     "number": 120, 
     "name": "Светлый шелк неба (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Татьяна Томах", 
     "link": "http://mds.kallisto.ru/hell/podcast/202_Tatyana_Tomah_-_Svetlyi_shelk_neba_(Chast_1).mp3", 
     "number": 121, 
     "name": "Светлый шелк неба (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Алина и Денис Голиковы", 
     "link": "http://mds.kallisto.ru/hell/podcast/201_Alina_i_Denis_Golikovy_-_Zhdi_menya_i_ya_vernus.mp3", 
     "number": 122, 
     "name": "Жди меня, и я вернусь"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Олег Овчинников", 
     "link": "http://mds.kallisto.ru/hell/podcast/200_Oleg_Ovchinnikov_-_Tovar_mesyaca.mp3", 
     "number": 123, 
     "name": "Товар месяца"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Евгений Гаркушев", 
     "link": "http://mds.kallisto.ru/hell/podcast/199_Evgenii_Garkushev_-_Vygodnaya_rabota_(Chast_2).mp3", 
     "number": 124, 
     "name": "Выгодная работа (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Евгений Гаркушев", 
     "link": "http://mds.kallisto.ru/hell/podcast/198_Evgenii_Garkushev_-_Vygodnaya_rabota_(Chast_1).mp3", 
     "number": 125, 
@@ -910,21 +910,21 @@
     "name": "Жизнь замечательных людей (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Леонид Каганов", 
     "link": "ftp://mds:mds@mds.kallisto.ru/roygbiv/records/mp3/Leonid_Kaganov_-_Gastarbajter.mp3", 
     "number": 131, 
     "name": "Гастарбайтер"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Сергей Волков", 
     "link": "http://mds.kallisto.ru/roygbiv/records/mp3/Sergey_Volkov_-_41.mp3", 
     "number": 132, 
     "name": "41"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Алексей Толкачёв", 
     "link": "http://mds.kallisto.ru/roygbiv/records/mp3/Aleksey_Tolkachev_-_Rabotaem!.mp3", 
     "number": 133, 
@@ -1022,7 +1022,7 @@
     "name": "Сэм"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Дэн Шорин", 
     "link": "http://mds.kallisto.ru/hell/podcast/179_Den_Shorin_-_Dve_s_polovinoi_sekundy.mp3", 
     "number": 147, 
@@ -1036,70 +1036,70 @@
     "name": "Туз, дама и космос"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Сергей Палий", 
     "link": "http://mds.kallisto.ru/hell/podcast/177_Sergei_Palii_-_Karantin_(Chast_2).mp3", 
     "number": 149, 
     "name": "Карантин (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Сергей Палий", 
     "link": "http://mds.kallisto.ru/hell/podcast/176_Sergei_Palii_-_Karantin_(Chast_1).mp3", 
     "number": 150, 
     "name": "Карантин (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Михаил Кликин", 
     "link": "http://mds.kallisto.ru/hell/podcast/175_Mihail_Klikin_-_Chyornyi_kobel_Zhuk_(Chast_2).mp3", 
     "number": 151, 
     "name": "Чёрный кобель Жук (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Михаил Кликин", 
     "link": "http://mds.kallisto.ru/hell/podcast/174_Mihail_Klikin_-_Chyornyi_kobel_Zhuk_(Chast_1).mp3", 
     "number": 152, 
     "name": "Чёрный кобель Жук (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Тим Скоренко", 
     "link": "http://mds.kallisto.ru/hell/podcast/173_Tim_Skorenko_-_Katalog_Killinsbi.mp3", 
     "number": 153, 
     "name": "Каталог Киллинсби"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Майк Гелприн", 
     "link": "http://mds.kallisto.ru/hell/podcast/172_Maik_Gelprin_-_Ishod.mp3", 
     "number": 154, 
     "name": "Исход"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Александр Сальников", 
     "link": "http://mds.kallisto.ru/hell/podcast/170_Aleksandr_Salnikov_-_Krest_na_tvoih_plechah_(Chast_1).mp3", 
     "number": 155, 
     "name": "Крест на твоих плечах (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Александр Сальников", 
     "link": "http://mds.kallisto.ru/hell/podcast/171_Aleksandr_Salnikov_-_Krest_na_tvoih_plechah_(Chast_2).mp3", 
     "number": 156, 
     "name": "Крест на твоих плечах (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Максим Маскаль", 
     "link": "http://mds.kallisto.ru/hell/podcast/169_Maksim_Maskal_-_Ipoteka_dlya_durakov.mp3", 
     "number": 157, 
     "name": "Ипотека для дураков"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Овчинников Олег", 
     "link": "http://mds.kallisto.ru/hell/podcast/168_Ovchinnikov_Oleg_-_II.mp3", 
     "number": 158, 
@@ -1113,14 +1113,14 @@
     "name": "Чужая ненависть"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Олег Силин", 
     "link": "http://mds.kallisto.ru/hell/podcast/166_Oleg_Silin_-_Devushka_celevoi_mechty.mp3", 
     "number": 160, 
     "name": "Девушка целевой мечты"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Максим Дубровин", 
     "link": "http://mds.kallisto.ru/hell/podcast/165_Maksim_Dubrovin_-_Smert_Pticy.mp3", 
     "number": 161, 
@@ -1148,14 +1148,14 @@
     "name": "Перешейцы"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Михаил Кликин", 
     "link": "http://mds.kallisto.ru/hell/podcast/161_Mihail_Klikin_-_Mertvye_pashni_(Chast_2).mp3", 
     "number": 165, 
     "name": "Мертвые пашни (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Михаил Кликин", 
     "link": "http://mds.kallisto.ru/hell/podcast/160_Mihail_Klikin_-_Mertvye_pashni_(Chast_1).mp3", 
     "number": 166, 
@@ -1246,7 +1246,7 @@
     "name": "Перо из крыла ангела"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Дэн Шорин", 
     "link": "ftp://mds:mds@mds.kallisto.ru/hell/podcast/147_Den_Shorin_-_Vse_ugly_treugolnika.mp3", 
     "number": 179, 
@@ -1281,49 +1281,49 @@
     "name": "Двести слов для улыбки"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Дмитрий Дзыговбродский", 
     "link": "http://mds.kallisto.ru/hell/podcast/142_Dmitrii_Dzygovbrodskii_-_Ispovednik.mp3", 
     "number": 184, 
     "name": "Исповедник"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Леонид Каганов", 
     "link": "http://mds.kallisto.ru/hell/podcast/141_Leonid_Kaganov_-_Mama_Sonnim_(Chast_2).mp3", 
     "number": 185, 
     "name": "Мама Сонним (Часть 2)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Олег Дивов", 
     "link": "http://mds.kallisto.ru/hell/podcast/139_Oleg_Divov_-_Vunderfaliya.mp3", 
     "number": 186, 
     "name": "Вундервафля"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Леонид Каганов", 
     "link": "http://mds.kallisto.ru/hell/podcast/140_Leonid_Kaganov_-_Mama_Sonnim_(Chast_1).mp3", 
     "number": 187, 
     "name": "Мама Сонним (Часть 1)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Лариса Бортникова", 
     "link": "http://mds.kallisto.ru/hell/podcast/138_Larisa_Bortnikova_-_havroshechka.mp3", 
     "number": 188, 
     "name": "Хаврошечка"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Дарья Булатникова", 
     "link": "http://mds.kallisto.ru/hell/podcast/136_Darya_Bulatnikova_-_Ostrye_ushki.mp3", 
     "number": 189, 
     "name": "Острые ушки"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Наталья Козельская", 
     "link": "http://mds.kallisto.ru/hell/podcast/137_Natalya_Kozelskaya_-_Lavka_Merlina.mp3", 
     "number": 190, 
@@ -1337,14 +1337,14 @@
     "name": "Мне повезет"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Иван Наумов", 
     "link": "http://mds.kallisto.ru/hell/podcast/134_Ivan_Naumov_-_Esli_chto-to_sluchitsya.mp3", 
     "number": 192, 
     "name": "Если что-то случится"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Елена Первушина", 
     "link": "http://mds.kallisto.ru/hell/podcast/135_Elena_Pervushina_-_Ubezhishhe.mp3", 
     "number": 193, 
@@ -1421,28 +1421,28 @@
     "name": "Доля сияния"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Дмитрий Градинар", 
     "link": "http://mds.kallisto.ru/hell/podcast/124_Dmitrii_Gradinar_-_Pervyi_den_vesny.mp3", 
     "number": 204, 
     "name": "Первый день весны"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Иван Наумов", 
     "link": "http://mds.kallisto.ru/hell/podcast/123_Ivan_Naumov_-_Sinyaya_komnata.mp3", 
     "number": 205, 
     "name": "Синяя комната"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Тим Скоренко", 
     "link": "http://mds.kallisto.ru/hell/podcast/122_Tim_Skorenko_-_Bremya_horoshego_cheloveka.mp3", 
     "number": 206, 
     "name": "Бремя хорошего человека"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Яна Дубинянская", 
     "link": "http://mds.kallisto.ru/hell/podcast/121_Yana_Dubinyanskaya_-_Karfagen.mp3", 
     "number": 207, 
@@ -2597,7 +2597,7 @@
     "name": "Глубокое разочарование"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Джордж Мартин", 
     "link": "http://mds.kallisto.ru/cothuk/mp3/712-Dzhordzh_Martin-Zver_dlja_Norna.mp3", 
     "number": 372, 
@@ -2688,21 +2688,21 @@
     "name": "Ангелы тоже любят"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Джордж Мартин", 
     "link": "http://mds.kallisto.ru/cothuk/mp3/698-Dzhordzh_Martin-Bashnja_iz_pepla.mp3", 
     "number": 385, 
     "name": "Башня из пепла"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Вандана Сингх", 
     "link": "http://mds.kallisto.ru/cothuk/mp3/699-Vandana_Singh-Deli.mp3", 
     "number": 386, 
     "name": "Дели"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Фергюс Гвинплейн Макинтайр", 
     "link": "http://mds.kallisto.ru/cothuk/mp3/694-Fergjus_Gvinplejn_Makintajr-Vzryvnoe_delce.mp3", 
     "number": 387, 
@@ -2716,7 +2716,7 @@
     "name": "Бесконечная череда отражений"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Фредерик Браун", 
     "link": "http://mds.kallisto.ru/cothuk/mp3/696-Frederik_Braun-A_chto_budet.mp3", 
     "number": 389, 
@@ -2730,14 +2730,14 @@
     "name": "Первая машина времени"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Дэвид Лэнгфорд", 
     "link": "http://mds.kallisto.ru/cothuk/mp3/690-Dejv_Lengford-Kontakt_inogo_roda.mp3", 
     "number": 391, 
     "name": "Контакт иного рода"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Джеффри Форд", 
     "link": "http://mds.kallisto.ru/cothuk/mp3/691-Dzheffri_Ford-Prikljuchenie_v_glubokom_kosmose_N32.mp3", 
     "number": 392, 
@@ -2751,21 +2751,21 @@
     "name": "Аманда и пришелец"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Сборник", 
     "link": "http://mds.kallisto.ru/cothuk/mp3/693-Vyderzhki_iz_publichnyh_vystuplenij_indejskih_vozhdej_devjatnadcatogo_veka.mp3", 
     "number": 394, 
     "name": "Выдержки из публичных выступлений индейских вождей девятнадцатого века"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Эрнест Хоган", 
     "link": "http://mds.kallisto.ru/cothuk/mp3/686-Ernest_Hogan-Kojot_otpravljaetsja_v_Gollivud.mp3", 
     "number": 395, 
     "name": "Койот отправляется в Голливуд"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Дон Уэбб", 
     "link": "http://mds.kallisto.ru/cothuk/mp3/687-Don_Uebb-Dnevnik,_najdennyj_v_pustoj_studii.mp3", 
     "number": 396, 
@@ -2779,21 +2779,21 @@
     "name": "Пикантный детектив №3"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Майкл Арсенолт", 
     "link": "http://mds.kallisto.ru/cothuk/mp3/689-Majkl_Arsenolt-Samyj_obychnyj_Hellouin.mp3", 
     "number": 398, 
     "name": "Самый обычный Хэллоуин"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Аллен Стил", 
     "link": "http://mds.kallisto.ru/cothuk/mp3/683-Allen_Stil-Ohotnik_na_igrumov.mp3", 
     "number": 399, 
     "name": "Охотник на игрумов"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Лорент Мак-Алистер", 
     "link": "http://mds.kallisto.ru/cothuk/mp3/684-Lorent_Mak-Alister-Kapucina_i_volk.mp3", 
     "number": 400, 
@@ -11291,7 +11291,7 @@
     "name": "Существуете ли вы, мистер Джонс?"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Стивен Кинг", 
     "link": "ftp://mds:mds@mds.kallisto.ru/hell/Stivin_King_-_Paranoid_(Zacliatie_paranoika).mp3", 
     "number": 1620, 
@@ -11305,21 +11305,21 @@
     "name": "Говорящие гримасы и грани"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Харлан Эллисон", 
     "link": "ftp://mds:mds@mds.kallisto.ru/Harlan_Ellison_-_Santa_Klaus_protiv_P.A.U.K.A..mp3", 
     "number": 1622, 
     "name": "Санта Клаус против П.А.У.К.а"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Станислав Лем", 
     "link": "ftp://mds:mds@mds.kallisto.ru/Stanislav_Lem_-_Futurologicheskij_kongress_04.mp3", 
     "number": 1623, 
     "name": "Футурологический конгресс (часть 4)"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Станислав Лем", 
     "link": "ftp://mds:mds@mds.kallisto.ru/Stanislav_Lem_-_Futurologicheskij_kongress_05.mp3", 
     "number": 1624, 
@@ -11340,7 +11340,7 @@
     "name": "Все пташки возвращаются на насест"
   }, 
   {
-    "downloaded": false, 
+    "downloaded": true,
     "author": "Габриэль Гарсиа Маркес", 
     "link": "ftp://mds:mds@mds.kallisto.ru/Gabriel'_Garsia_Markes_-_Samyi_Krasivyi_Utoplennik_v_mire.mp3", 
     "number": 1627, 

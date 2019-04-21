@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
+import os
 import json
 import urllib
 import time
 import sys
 import codecs
-
 
 # TODO: 1. Cancel download it it's not progressing
 # TODO: 3. Store all known links
@@ -37,23 +37,30 @@ def download():
 
     counter = 0
     line = 0
-    while counter < 50:
+    while counter < 30:
         if not data[line]['downloaded']:
             filename = u'{}.{} - {}.mp3'.format(data[line]['number'], data[line]['author'], data[line]['name'])
             print(filename)
             try:
                 urllib.urlretrieve(data[line]['link'], 'output/'+filename, reporthook)
-                counter += 1
                 data[line]['downloaded'] = True
+            except Exception as e:
+                data[line]['downloaded'] = 'err'
+                print('    Ошибка скачивания.')
+            finally:
                 with codecs.open('input/data.json', 'w+', encoding='utf-8') as f:
                     f.write(json.dumps(data, ensure_ascii=False, indent=2))
-            except Exception as e:
-                print('    Ошибка скачивания.')
-
+                counter += 1
         line += 1  # go to next line
     else:
         print('')
         print('Готово!')
+
+    for f in os.listdir('output'):
+        if os.path.getsize('output/' + f) < 1000000:
+            os.remove('output/' + f)
+
+    sorted([os.path.getsize('output/' + x) for x in os.listdir('output')])
 
 
 if __name__ == '__main__':
