@@ -32,5 +32,6 @@ class MdsSpider(scrapy.Spider):
 
     def parse_job(self, response):
         item = response.request.meta['item']
-        item['link'] = response.css('#catalogtable tbody tr:nth-child(1) td:nth-child(4) a::attr(href)').extract_first()
+        links = response.css('#catalogtable tbody tr td:nth-child(4) a::attr(href)').getall()
+        item['links'] = ' || '.join(links)
         return item

@@ -8,8 +8,6 @@ import sys
 import codecs
 
 # TODO: 1. Cancel download it it's not progressing
-# TODO: 3. Store all known links
-# TODO: 4. Make scrappy store data to sqlite
 
 
 def reporthook(count, block_size, total_size):
@@ -25,6 +23,8 @@ def reporthook(count, block_size, total_size):
         percent = '? '
     sys.stdout.write("\r... %d%%, %d MB, %d KB/s, %d секунд" % (percent, progress_size / (1024 * 1024), speed, duration))
     sys.stdout.flush()
+    if percent >=100:
+        print ''
 
 
 def download():
@@ -38,20 +38,28 @@ def download():
     counter = 0
     line = 0
     while counter < 30:
-        if not data[line]['downloaded']:
+        if not data[line]['downloaded'] or data[line]['downloaded'] == 'err':
             filename = u'{}.{} - {}.mp3'.format(data[line]['number'], data[line]['author'], data[line]['name'])
             print(filename)
-            try:
-                urllib.urlretrieve(data[line]['link'], 'output/'+filename, reporthook)
-                data[line]['downloaded'] = True
-            except Exception as e:
-                data[line]['downloaded'] = 'err'
-                print('    Ошибка скачивания.')
-            finally:
-                with codecs.open('input/data.json', 'w+', encoding='utf-8') as f:
-                    f.write(json.dumps(data, ensure_ascii=False, indent=2))
-                counter += 1
-        line += 1  # go to next line
+            for index, link in enumerate(data[line]['links'].split(' || ')):
+                try:
+                    print('Ссылка {} из {}'.format(index+1, len(data[line]['links'].split(' || '))))
+                    urllib.urlretrieve(link, 'output/'+filename, reporthook)
+                    data[line]['downloaded'] = True
+                    break
+                except Exception as e:
+                    data[line]['downloaded'] = 'err'
+                    print('    Отмена.')
+                    continue
+                except KeyboardInterrupt:
+                    data[line]['downloaded'] = 'err'
+                    print('    Отмена.')
+                    continue
+
+            with codecs.open('input/data.json', 'w+', encoding='utf-8') as f:
+                f.write(json.dumps(data, ensure_ascii=False, indent=2))
+            counter += 1
+        line += 1
     else:
         print('')
         print('Готово!')
@@ -59,8 +67,6 @@ def download():
     for f in os.listdir('output'):
         if os.path.getsize('output/' + f) < 1000000:
             os.remove('output/' + f)
-
-    sorted([os.path.getsize('output/' + x) for x in os.listdir('output')])
 
 
 if __name__ == '__main__':

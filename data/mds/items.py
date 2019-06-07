@@ -6,5 +6,5 @@ import scrapy
 class MdsItem(scrapy.Item):
     author = scrapy.Field()
     name = scrapy.Field()
-    link = scrapy.Field()
+    links = scrapy.Field()
     number = scrapy.Field()
