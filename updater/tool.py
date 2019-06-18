@@ -5,12 +5,10 @@ import codecs
 def change():
 
     with open('data_old.json', 'r') as f:
-        original_data = f.read()
-        original_data = json.loads(original_data)
+        original_data = json.loads(f.read())
 
     with open('data_new.json', 'r') as f:
-        new_data = f.read()
-        new_data = json.loads(new_data)
+        new_data = json.loads(f.read())
 
     new_data.sort(key=lambda x:  x['number'])
     for node in new_data:

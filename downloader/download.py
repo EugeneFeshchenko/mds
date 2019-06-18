@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 
-import os
-import json
-import urllib
-import time
-import sys
 import codecs
-
-# TODO: 1. Cancel download it it's not progressing
+import json
+import os
+import sys
+import time
+import urllib
 
 
 def reporthook(count, block_size, total_size):
@@ -23,8 +21,8 @@ def reporthook(count, block_size, total_size):
         percent = '? '
     sys.stdout.write("\r... %d%%, %d MB, %d KB/s, %d секунд" % (percent, progress_size / (1024 * 1024), speed, duration))
     sys.stdout.flush()
-    if percent >=100:
-        print ''
+    if percent >= 100:
+        print('')
 
 
 def download():
@@ -33,7 +31,7 @@ def download():
         data = f.read()
         data = json.loads(data)
 
-    data.sort(key=lambda x: x['number'])
+    data.sort(key=lambda x: x['number'], reverse=True)
 
     counter = 0
     line = 0

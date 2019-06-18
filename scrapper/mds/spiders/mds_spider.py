@@ -2,7 +2,7 @@
 
 import scrapy
 from scrapy.http import Request
-from mds.items import MdsItem
+from ..items import MdsItem
 
 
 class MdsSpider(scrapy.Spider):
