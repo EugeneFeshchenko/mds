@@ -1,11 +1,14 @@
 # -*- coding: utf-8 -*-
-
+from __future__ import  unicode_literals
 import codecs
 import json
 import os
 import sys
 import time
 import urllib
+import logging
+
+logging.basicConfig(format='%(message)s', level=logging.INFO)
 
 
 def reporthook(count, block_size, total_size):
@@ -19,14 +22,15 @@ def reporthook(count, block_size, total_size):
     percent = int(count * block_size * 100 / total_size)
     if percent < 0:
         percent = '? '
-    sys.stdout.write("\r... %d%%, %d MB, %d KB/s, %d секунд" % (percent, progress_size / (1024 * 1024), speed, duration))
-    sys.stdout.flush()
+    sys.stdout.write(
+        "\r... %d%%, %d MB, %d KB/s, %d секунд" % (percent, progress_size / (1024 * 1024), speed, duration)
+    )
     if percent >= 100:
-        print('')
+        sys.stdout.write('\n')
+    sys.stdout.flush()
 
 
 def download():
-
     with open('input/data.json', 'r') as f:
         data = f.read()
         data = json.loads(data)
@@ -36,31 +40,27 @@ def download():
     counter = 0
     line = 0
     while counter < 30:
-        if not data[line]['downloaded'] or data[line]['downloaded'] == 'err':
-            filename = u'{}.{} - {}.mp3'.format(data[line]['number'], data[line]['author'], data[line]['name'])
-            print(filename)
+        if data[line]['downloaded'] in [False, 'err']:
+            filename = '{}.{} - {}.mp3'.format(data[line]['number'], data[line]['author'], data[line]['name'])
+            logging.info(filename)
             for index, link in enumerate(data[line]['links'].split(' || ')):
                 try:
-                    print('Ссылка {} из {}'.format(index+1, len(data[line]['links'].split(' || '))))
-                    urllib.urlretrieve(link, 'output/'+filename, reporthook)
+                    logging.info('Ссылка {} из {}'.format(index + 1, len(data[line]['links'].split(' || '))))
+                    urllib.urlretrieve(link, 'output/' + filename, reporthook)
                     data[line]['downloaded'] = True
                     break
-                except Exception as e:
-                    data[line]['downloaded'] = 'err'
-                    print('    Отмена.')
+                except (Exception, KeyboardInterrupt) as e:
+                    logging.info('Отмена')
                     continue
-                except KeyboardInterrupt:
-                    data[line]['downloaded'] = 'err'
-                    print('    Отмена.')
-                    continue
+            else:
+                data[line]['downloaded'] = 'err'
 
             with codecs.open('input/data.json', 'w+', encoding='utf-8') as f:
                 f.write(json.dumps(data, ensure_ascii=False, indent=2))
             counter += 1
         line += 1
     else:
-        print('')
-        print('Готово!')
+        logging.info('Готово!')
 
     for f in os.listdir('output'):
         if os.path.getsize('output/' + f) < 1000000:
