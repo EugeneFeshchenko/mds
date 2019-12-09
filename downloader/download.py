@@ -1,12 +1,9 @@
-# -*- coding: utf-8 -*-
-from __future__ import  unicode_literals
 import codecs
 import json
-import os
-import sys
-import time
-import urllib
 import logging
+import os
+import time
+from urllib.request import urlretrieve
 
 logging.basicConfig(format='%(message)s', level=logging.INFO)
 
@@ -16,18 +13,21 @@ def reporthook(count, block_size, total_size):
     if count == 0:
         start_time = time.time()
         return
+
     duration = time.time() - start_time
-    progress_size = int(count * block_size)
-    speed = int(progress_size / (1024 * duration))
-    percent = int(count * block_size * 100 / total_size)
-    if percent < 0:
-        percent = '? '
-    sys.stdout.write(
-        "\r... %d%%, %d MB, %d KB/s, %d секунд" % (percent, progress_size / (1024 * 1024), speed, duration)
-    )
-    if percent >= 100:
-        sys.stdout.write('\n')
-    sys.stdout.flush()
+
+    print(' '*50, end='\r')
+
+    if total_size > 0:
+        progress_size = int(count * block_size)/1000000
+        speed = int(progress_size / (1024 * duration))
+        percent = int(count * block_size * 100 / total_size)
+        print(f"... {percent}%, {progress_size} MB, {speed} KB/s, {duration} секунд", end='\r')
+        if percent >= 100:
+            print('\n')
+
+    else:
+        print(f"... {int(count*block_size)/1000000:.2f} MB, {duration:.0f} секунд", end='\r')
 
 
 def download():
@@ -41,16 +41,16 @@ def download():
     line = 0
     while counter < 30:
         if data[line]['downloaded'] in [False, 'err']:
-            filename = '{}.{} - {}.mp3'.format(data[line]['number'], data[line]['author'], data[line]['name'])
+            filename = f"{data[line]['number']}.{data[line]['author']} - {data[line]['name']}.mp3".replace('/', '_')
             logging.info(filename)
             for index, link in enumerate(data[line]['links'].split(' || ')):
                 try:
-                    logging.info('Ссылка {} из {}'.format(index + 1, len(data[line]['links'].split(' || '))))
-                    urllib.urlretrieve(link, 'output/' + filename, reporthook)
+                    logging.info(f"Ссылка {index + 1} из {len(data[line]['links'].split(' || '))}")
+                    urlretrieve(link, f'output/{filename}', reporthook)
                     data[line]['downloaded'] = True
                     break
                 except (Exception, KeyboardInterrupt) as e:
-                    logging.info('Отмена')
+                    logging.info(f'Отмена ({e})')
                     continue
             else:
                 data[line]['downloaded'] = 'err'
@@ -60,6 +60,7 @@ def download():
             counter += 1
         line += 1
     else:
+        print(' ')
         logging.info('Готово!')
 
     for f in os.listdir('output'):
