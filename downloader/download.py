@@ -22,7 +22,7 @@ def reporthook(count, block_size, total_size):
         progress_size = int(count * block_size)/1000000
         speed = int(progress_size / (1024 * duration))
         percent = int(count * block_size * 100 / total_size)
-        print(f"... {percent}%, {progress_size} MB, {speed} KB/s, {duration} секунд", end='\r')
+        print(f"... {percent}%, {progress_size:.0f} MB, {speed} KB/s, {duration:.0f} секунд", end='\r')
         if percent >= 100:
             print('\n')
 
