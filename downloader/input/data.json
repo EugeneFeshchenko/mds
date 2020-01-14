@@ -1064,294 +1064,294 @@
     "author": "Анри Труайя"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1485,
     "name": "Зеленый гость",
     "links": "ftp://mds:mds@mds.kallisto.ru/Harlan_Ellison_i_Genri_Slizar_-_Zeljonyj_gost'.mp3 || http://mds.kallisto.ru/Harlan_Ellison_i_Genri_Slizar_-_Zeljonyj_gost'.mp3 || http://mds.datagrad.ru/download/Harlan_Ellison_i_Genri_Slizar_-_Zeljonyj_gost'.mp3 || ftp://mds:mds@ftp.mds-club.ru/Harlan_Ellison_i_Genri_Slizar_-_Zeljonyj_gost'.mp3 || http://mds.mds-club.ru/Harlan_Ellison_i_Genri_Slizar_-_Zeljonyj_gost'.mp3",
     "author": "Харлан Эллисон и Генри Слизар"
   },
   {
-    "downloaded": "err",
+    "downloaded": true,
     "number": 1484,
     "name": "Зеленый мальчик-с-пальчик",
     "links": "ftp://mds:mds@mds.kallisto.ru/Klifford_Sajmak_-_Zelenyj_mal'chik_s_pal'chik.mp3 || http://mds.kallisto.ru/Klifford_Sajmak_-_Zelenyj_mal'chik_s_pal'chik.mp3 || http://mds.datagrad.ru/download/Klifford_Sajmak_-_Zelenyj_mal'chik_s_pal'chik.mp3 || ftp://mds:mds@ftp.mds-club.ru/Klifford_Sajmak_-_Zelenyj_mal'chik_s_pal'chik.mp3 || http://mds.mds-club.ru/Klifford_Sajmak_-_Zelenyj_mal'chik_s_pal'chik.mp3",
     "author": "Клиффорд Саймак"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1483,
     "name": "Серый Волк и другие",
     "links": "ftp://mds:mds@mds.kallisto.ru/kallisto/nodate/alexander_chumanov-sery_volk_i_drugie.mp3 || http://mds.kallisto.ru/kallisto/nodate/alexander_chumanov-sery_volk_i_drugie.mp3 || http://mds.datagrad.ru/download/kallisto/nodate/alexander_chumanov-sery_volk_i_drugie.mp3 || ftp://mds:mds@ftp.mds-club.ru/kallisto/nodate/alexander_chumanov-sery_volk_i_drugie.mp3 || http://mds.mds-club.ru/kallisto/nodate/alexander_chumanov-sery_volk_i_drugie.mp3",
     "author": "Александр Чуманов"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1482,
     "name": "Рассвет наконец наступил...",
     "links": "ftp://mds:mds@mds.kallisto.ru/Aleksandr_Chumanov_-_Rassvet_nakonec_nastupil.mp3 || http://mds.kallisto.ru/Aleksandr_Chumanov_-_Rassvet_nakonec_nastupil.mp3 || http://mds.datagrad.ru/download/Aleksandr_Chumanov_-_Rassvet_nakonec_nastupil.mp3 || ftp://mds:mds@ftp.mds-club.ru/Aleksandr_Chumanov_-_Rassvet_nakonec_nastupil.mp3 || http://mds.mds-club.ru/Aleksandr_Chumanov_-_Rassvet_nakonec_nastupil.mp3",
     "author": "Александр Чуманов"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1481,
     "name": "Три электрыцаря",
     "links": "ftp://mds:mds@mds.kallisto.ru/Stanislav_Lem_-_Tri_elektrycarja.mp3 || http://mds.kallisto.ru/Stanislav_Lem_-_Tri_elektrycarja.mp3 || http://mds.datagrad.ru/download/Stanislav_Lem_-_Tri_elektrycarja.mp3 || ftp://mds:mds@ftp.mds-club.ru/Stanislav_Lem_-_Tri_elektrycarja.mp3 || http://mds.mds-club.ru/Stanislav_Lem_-_Tri_elektrycarja.mp3",
     "author": "Станислав Лем"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1480,
     "name": "Машина Трурля",
     "links": "ftp://mds:mds@mds.kallisto.ru/Stanislav_Lem_-_Mashina_Trurlja.mp3 || http://mds.kallisto.ru/Stanislav_Lem_-_Mashina_Trurlja.mp3 || http://mds.datagrad.ru/download/Stanislav_Lem_-_Mashina_Trurlja.mp3 || ftp://mds:mds@ftp.mds-club.ru/Stanislav_Lem_-_Mashina_Trurlja.mp3 || http://mds.mds-club.ru/Stanislav_Lem_-_Mashina_Trurlja.mp3",
     "author": "Станислав Лем"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1479,
     "name": "Крепкая взбучка",
     "links": "ftp://mds:mds@mds.kallisto.ru/Stanislav_Lem_-_Krepkaja_vzbuchka.mp3 || http://mds.kallisto.ru/Stanislav_Lem_-_Krepkaja_vzbuchka.mp3 || http://mds.datagrad.ru/download/Stanislav_Lem_-_Krepkaja_vzbuchka.mp3 || ftp://mds:mds@ftp.mds-club.ru/Stanislav_Lem_-_Krepkaja_vzbuchka.mp3 || http://mds.mds-club.ru/Stanislav_Lem_-_Krepkaja_vzbuchka.mp3",
     "author": "Станислав Лем"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1478,
     "name": "Как уцелела вселенная",
     "links": "ftp://mds:mds@mds.kallisto.ru/Stanislav_Lem_-_Kak_ucelela_vselennaja_98.mp3 || http://mds.kallisto.ru/Stanislav_Lem_-_Kak_ucelela_vselennaja_98.mp3 || http://mds.datagrad.ru/download/Stanislav_Lem_-_Kak_ucelela_vselennaja_98.mp3 || ftp://mds:mds@ftp.mds-club.ru/Stanislav_Lem_-_Kak_ucelela_vselennaja_98.mp3 || http://mds.mds-club.ru/Stanislav_Lem_-_Kak_ucelela_vselennaja_98.mp3",
     "author": "Станислав Лем"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1477,
     "name": "Как Микромил и Гигациан разбеганию туманностей начало положили",
     "links": "ftp://mds:mds@mds.kallisto.ru/Stanislav_Lem_-_Kak_Mikromil_i_Gigacian_razbeganiju_tumannostej_polozhili_nachalo.mp3 || http://mds.kallisto.ru/Stanislav_Lem_-_Kak_Mikromil_i_Gigacian_razbeganiju_tumannostej_polozhili_nachalo.mp3 || http://mds.datagrad.ru/download/Stanislav_Lem_-_Kak_Mikromil_i_Gigacian_razbeganiju_tumannostej_polozhili_nachalo.mp3 || ftp://mds:mds@ftp.mds-club.ru/Stanislav_Lem_-_Kak_Mikromil_i_Gigacian_razbeganiju_tumannostej_polozhili_nachalo.mp3 || http://mds.mds-club.ru/Stanislav_Lem_-_Kak_Mikromil_i_Gigacian_razbeganiju_tumannostej_polozhili_nachalo.mp3",
     "author": "Станислав Лем"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1476,
     "name": "Белая смерть",
     "links": "ftp://mds:mds@mds.kallisto.ru/Stanislav_Lem_-_Belaja_Smert'.mp3 || http://mds.kallisto.ru/Stanislav_Lem_-_Belaja_Smert'.mp3 || http://mds.datagrad.ru/download/Stanislav_Lem_-_Belaja_Smert'.mp3 || ftp://mds:mds@ftp.mds-club.ru/Stanislav_Lem_-_Belaja_Smert'.mp3 || http://mds.mds-club.ru/Stanislav_Lem_-_Belaja_Smert'.mp3",
     "author": "Станислав Лем"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1475,
     "name": "Я вижу: человек сидит на стуле и стул кусает его за ногу",
     "links": "ftp://mds:mds@mds.kallisto.ru/Robert_Shekli_i_Harlan_Elisson_-_Ja_vizhu__chelovek_sidit_na_stule_i_stul_kusaet_ego_za_nogu.mp3 || http://mds.kallisto.ru/Robert_Shekli_i_Harlan_Elisson_-_Ja_vizhu__chelovek_sidit_na_stule_i_stul_kusaet_ego_za_nogu.mp3 || http://mds.datagrad.ru/download/Robert_Shekli_i_Harlan_Elisson_-_Ja_vizhu__chelovek_sidit_na_stule_i_stul_kusaet_ego_za_nogu.mp3 || ftp://mds:mds@ftp.mds-club.ru/Robert_Shekli_i_Harlan_Elisson_-_Ja_vizhu__chelovek_sidit_na_stule_i_stul_kusaet_ego_za_nogu.mp3 || http://mds.mds-club.ru/Robert_Shekli_i_Harlan_Elisson_-_Ja_vizhu__chelovek_sidit_na_stule_i_stul_kusaet_ego_za_nogu.mp3",
     "author": "Роберт Шекли и Харлан Элиссон"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1474,
     "name": "Так люди этим занимаются?",
     "links": "ftp://mds:mds@mds.kallisto.ru/Robert_Shekli_-_Tak_ljudi_etim_zanimajutsja.mp3 || http://mds.kallisto.ru/Robert_Shekli_-_Tak_ljudi_etim_zanimajutsja.mp3 || http://mds.datagrad.ru/download/Robert_Shekli_-_Tak_ljudi_etim_zanimajutsja.mp3 || ftp://mds:mds@ftp.mds-club.ru/Robert_Shekli_-_Tak_ljudi_etim_zanimajutsja.mp3 || http://mds.mds-club.ru/Robert_Shekli_-_Tak_ljudi_etim_zanimajutsja.mp3",
     "author": "Роберт Шекли"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1473,
     "name": "Песнь звездной любви",
     "links": "ftp://mds:mds@mds.kallisto.ru/Robert_Shekli_-_Pesn'_zvjozdnoj_ljubvi.mp3 || http://mds.kallisto.ru/Robert_Shekli_-_Pesn'_zvjozdnoj_ljubvi.mp3 || http://mds.datagrad.ru/download/Robert_Shekli_-_Pesn'_zvjozdnoj_ljubvi.mp3 || ftp://mds:mds@ftp.mds-club.ru/Robert_Shekli_-_Pesn'_zvjozdnoj_ljubvi.mp3 || http://mds.mds-club.ru/Robert_Shekli_-_Pesn'_zvjozdnoj_ljubvi.mp3",
     "author": "Роберт Шекли"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1472,
     "name": "Долой паразитов!",
     "links": "ftp://mds:mds@mds.kallisto.ru/Robert_Shekli_-_Doloj_parazitov!.mp3 || http://mds.kallisto.ru/Robert_Shekli_-_Doloj_parazitov!.mp3 || http://mds.datagrad.ru/download/Robert_Shekli_-_Doloj_parazitov!.mp3 || ftp://mds:mds@ftp.mds-club.ru/Robert_Shekli_-_Doloj_parazitov!.mp3 || http://mds.mds-club.ru/Robert_Shekli_-_Doloj_parazitov!.mp3",
     "author": "Роберт Шекли"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1471,
     "name": "Утерянное будущее",
     "links": "ftp://mds:mds@mds.kallisto.ru/Robert_Shekli_-_Uterjannoe_buduschee.mp3 || http://mds.kallisto.ru/Robert_Shekli_-_Uterjannoe_buduschee.mp3 || http://mds.datagrad.ru/download/Robert_Shekli_-_Uterjannoe_buduschee.mp3 || ftp://mds:mds@ftp.mds-club.ru/Robert_Shekli_-_Uterjannoe_buduschee.mp3 || http://mds.mds-club.ru/Robert_Shekli_-_Uterjannoe_buduschee.mp3",
     "author": "Роберт Шекли"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1470,
     "name": "Мисс Мышка и четвертое измерение",
     "links": "ftp://mds:mds@mds.kallisto.ru/Robert_Shekli_-_Miss_Myshka_i_chetvertoe_izmerenie.mp3 || http://mds.kallisto.ru/Robert_Shekli_-_Miss_Myshka_i_chetvertoe_izmerenie.mp3 || http://mds.datagrad.ru/download/Robert_Shekli_-_Miss_Myshka_i_chetvertoe_izmerenie.mp3 || ftp://mds:mds@ftp.mds-club.ru/Robert_Shekli_-_Miss_Myshka_i_chetvertoe_izmerenie.mp3 || http://mds.mds-club.ru/Robert_Shekli_-_Miss_Myshka_i_chetvertoe_izmerenie.mp3",
     "author": "Роберт Шекли"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1469,
     "name": "Желания Силверсмита",
     "links": "ftp://mds:mds@mds.kallisto.ru/Robert_Shekli_-_Zhelaniya_Silver_Smita_(106.8).mp3 || http://mds.kallisto.ru/Robert_Shekli_-_Zhelaniya_Silver_Smita_(106.8).mp3 || http://mds.datagrad.ru/download/Robert_Shekli_-_Zhelaniya_Silver_Smita_(106.8).mp3 || ftp://mds:mds@ftp.mds-club.ru/Robert_Shekli_-_Zhelaniya_Silver_Smita_(106.8).mp3 || http://mds.mds-club.ru/Robert_Shekli_-_Zhelaniya_Silver_Smita_(106.8).mp3",
     "author": "Роберт Шекли"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1468,
     "name": "Голоса",
     "links": "ftp://mds:mds@mds.kallisto.ru/Robert_Shekli_-_Golosa.mp3 || http://mds.kallisto.ru/Robert_Shekli_-_Golosa.mp3 || http://mds.datagrad.ru/download/Robert_Shekli_-_Golosa.mp3 || ftp://mds:mds@ftp.mds-club.ru/Robert_Shekli_-_Golosa.mp3 || http://mds.mds-club.ru/Robert_Shekli_-_Golosa.mp3",
     "author": "Роберт Шекли"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1467,
     "name": "Божественное вмешательство",
     "links": "ftp://mds:mds@mds.kallisto.ru/Robert_Shekli_-_Bozhestvennoe_vmeshatel'stvo.mp3 || http://mds.kallisto.ru/Robert_Shekli_-_Bozhestvennoe_vmeshatel'stvo.mp3 || http://mds.datagrad.ru/download/Robert_Shekli_-_Bozhestvennoe_vmeshatel'stvo.mp3 || ftp://mds:mds@ftp.mds-club.ru/Robert_Shekli_-_Bozhestvennoe_vmeshatel'stvo.mp3 || http://mds.mds-club.ru/Robert_Shekli_-_Bozhestvennoe_vmeshatel'stvo.mp3",
     "author": "Роберт Шекли"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1466,
     "name": "Прометей",
     "links": "ftp://mds:mds@mds.kallisto.ru/Filip_Zhoze_Farmer_-_Prometej_01.mp3 || ftp://mds:mds@mds.kallisto.ru/Filip_Zhoze_Farmer_-_Prometej_02.mp3 || http://mds.kallisto.ru/Filip_Zhoze_Farmer_-_Prometej_02.mp3 || http://mds.datagrad.ru/download/Filip_Zhoze_Farmer_-_Prometej_02.mp3 || ftp://mds:mds@ftp.mds-club.ru/Filip_Zhoze_Farmer_-_Prometej_02.mp3 || http://mds.mds-club.ru/Filip_Zhoze_Farmer_-_Prometej_02.mp3 || http://mds.datagrad.ru/download/Filip_Zhoze_Farmer_-_Prometej_01.mp3 || ftp://mds:mds@ftp.mds-club.ru/Filip_Zhoze_Farmer_-_Prometej_01.mp3 || http://mds.mds-club.ru/Filip_Zhoze_Farmer_-_Prometej_01.mp3",
     "author": "Филип Жозе Фармер"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1465,
     "name": "Отношения",
     "links": "ftp://mds:mds@mds.kallisto.ru/Filip_Zhoze_Farmer_-_Otnoshenija.mp3 || http://mds.kallisto.ru/Filip_Zhoze_Farmer_-_Otnoshenija.mp3 || http://mds.datagrad.ru/download/Filip_Zhoze_Farmer_-_Otnoshenija.mp3 || ftp://mds:mds@ftp.mds-club.ru/Filip_Zhoze_Farmer_-_Otnoshenija.mp3 || http://mds.mds-club.ru/Filip_Zhoze_Farmer_-_Otnoshenija.mp3",
     "author": "Филип Жозе Фармер"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1464,
     "name": "Поющий колокольчик",
     "links": "ftp://mds:mds@mds.kallisto.ru/Ajzek_Azimov_-_Pojuschij_kolokol'chik.mp3 || http://mds.kallisto.ru/Ajzek_Azimov_-_Pojuschij_kolokol'chik.mp3 || http://mds.datagrad.ru/download/Ajzek_Azimov_-_Pojuschij_kolokol'chik.mp3 || ftp://mds:mds@ftp.mds-club.ru/Ajzek_Azimov_-_Pojuschij_kolokol'chik.mp3 || http://mds.mds-club.ru/Ajzek_Azimov_-_Pojuschij_kolokol'chik.mp3",
     "author": "Айзек Азимов"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1463,
     "name": "Необходимое условие",
     "links": "ftp://mds:mds@mds.kallisto.ru/Ajzek_Azimov_-_Neobhodimoe_uslovie.mp3 || http://mds.kallisto.ru/Ajzek_Azimov_-_Neobhodimoe_uslovie.mp3 || http://mds.datagrad.ru/download/Ajzek_Azimov_-_Neobhodimoe_uslovie.mp3 || ftp://mds:mds@ftp.mds-club.ru/Ajzek_Azimov_-_Neobhodimoe_uslovie.mp3 || http://mds.mds-club.ru/Ajzek_Azimov_-_Neobhodimoe_uslovie.mp3",
     "author": "Айзек Азимов"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1462,
     "name": "В лето 2430 от рождества Христова",
     "links": "ftp://mds:mds@mds.kallisto.ru/Ajzek_Azimov_-_V_leto_2430_ot_rozhdestva_Hristova.mp3 || http://mds.kallisto.ru/Ajzek_Azimov_-_V_leto_2430_ot_rozhdestva_Hristova.mp3 || http://mds.datagrad.ru/download/Ajzek_Azimov_-_V_leto_2430_ot_rozhdestva_Hristova.mp3 || ftp://mds:mds@ftp.mds-club.ru/Ajzek_Azimov_-_V_leto_2430_ot_rozhdestva_Hristova.mp3 || http://mds.mds-club.ru/Ajzek_Azimov_-_V_leto_2430_ot_rozhdestva_Hristova.mp3",
     "author": "Айзек Азимов"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1461,
     "name": "Ссылка в ад",
     "links": "ftp://mds:mds@mds.kallisto.ru/Ajzek_Azimov_-_Ssylka_v_ad.mp3 || http://mds.kallisto.ru/Ajzek_Azimov_-_Ssylka_v_ad.mp3 || http://mds.datagrad.ru/download/Ajzek_Azimov_-_Ssylka_v_ad.mp3 || ftp://mds:mds@ftp.mds-club.ru/Ajzek_Azimov_-_Ssylka_v_ad.mp3 || http://mds.mds-club.ru/Ajzek_Azimov_-_Ssylka_v_ad.mp3",
     "author": "Айзек Азимов"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1460,
     "name": "Пустота!",
     "links": "ftp://mds:mds@mds.kallisto.ru/Ajzek_Azimov_-_Pustota!.mp3 || http://mds.kallisto.ru/Ajzek_Azimov_-_Pustota!.mp3 || http://mds.datagrad.ru/download/Ajzek_Azimov_-_Pustota!.mp3 || ftp://mds:mds@ftp.mds-club.ru/Ajzek_Azimov_-_Pustota!.mp3 || http://mds.mds-club.ru/Ajzek_Azimov_-_Pustota!.mp3",
     "author": "Айзек Азимов"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1459,
     "name": "Покупаем Юпитер",
     "links": "ftp://mds:mds@mds.kallisto.ru/Ajzek_Azimov_-_Pokupaem_Jupiter.mp3 || http://mds.kallisto.ru/Ajzek_Azimov_-_Pokupaem_Jupiter.mp3 || http://mds.datagrad.ru/download/Ajzek_Azimov_-_Pokupaem_Jupiter.mp3 || ftp://mds:mds@ftp.mds-club.ru/Ajzek_Azimov_-_Pokupaem_Jupiter.mp3 || http://mds.mds-club.ru/Ajzek_Azimov_-_Pokupaem_Jupiter.mp3",
     "author": "Айзек Азимов"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1458,
     "name": "Памяти отца",
     "links": "ftp://mds:mds@mds.kallisto.ru/Ajzek_Azimov_-_Pamjati_otca.mp3 || http://mds.kallisto.ru/Ajzek_Azimov_-_Pamjati_otca.mp3 || http://mds.datagrad.ru/download/Ajzek_Azimov_-_Pamjati_otca.mp3 || ftp://mds:mds@ftp.mds-club.ru/Ajzek_Azimov_-_Pamjati_otca.mp3 || http://mds.mds-club.ru/Ajzek_Azimov_-_Pamjati_otca.mp3",
     "author": "Айзек Азимов"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1457,
     "name": "Они не прилетят",
     "links": "ftp://mds:mds@mds.kallisto.ru/Ajzek_Azimov_-_Oni_ne_priletjat.mp3 || http://mds.kallisto.ru/Ajzek_Azimov_-_Oni_ne_priletjat.mp3 || http://mds.datagrad.ru/download/Ajzek_Azimov_-_Oni_ne_priletjat.mp3 || ftp://mds:mds@ftp.mds-club.ru/Ajzek_Azimov_-_Oni_ne_priletjat.mp3 || http://mds.mds-club.ru/Ajzek_Azimov_-_Oni_ne_priletjat.mp3",
     "author": "Айзек Азимов"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1456,
     "name": "Дождик, дождик, перестань",
     "links": "ftp://mds:mds@mds.kallisto.ru/Ajzek_Azimov_-_Dozhdik,_dozhdik,_perestan'.mp3 || http://mds.kallisto.ru/Ajzek_Azimov_-_Dozhdik,_dozhdik,_perestan'.mp3 || http://mds.datagrad.ru/download/Ajzek_Azimov_-_Dozhdik,_dozhdik,_perestan'.mp3 || ftp://mds:mds@ftp.mds-club.ru/Ajzek_Azimov_-_Dozhdik,_dozhdik,_perestan'.mp3 || http://mds.mds-club.ru/Ajzek_Azimov_-_Dozhdik,_dozhdik,_perestan'.mp3",
     "author": "Айзек Азимов"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1455,
     "name": "Глубокое исследование",
     "links": "ftp://mds:mds@mds.kallisto.ru/Ajzek_Azimov_-_Glubokoe_issledovanie.mp3 || http://mds.kallisto.ru/Ajzek_Azimov_-_Glubokoe_issledovanie.mp3 || http://mds.datagrad.ru/download/Ajzek_Azimov_-_Glubokoe_issledovanie.mp3 || ftp://mds:mds@ftp.mds-club.ru/Ajzek_Azimov_-_Glubokoe_issledovanie.mp3 || http://mds.mds-club.ru/Ajzek_Azimov_-_Glubokoe_issledovanie.mp3",
     "author": "Айзек Азимов"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1454,
     "name": "Проблема боли",
     "links": "ftp://mds:mds@mds.kallisto.ru/Pol_Anderson_-_Problema_boli.mp3 || http://mds.kallisto.ru/Pol_Anderson_-_Problema_boli.mp3 || http://mds.datagrad.ru/download/Pol_Anderson_-_Problema_boli.mp3 || ftp://mds:mds@ftp.mds-club.ru/Pol_Anderson_-_Problema_boli.mp3 || http://mds.mds-club.ru/Pol_Anderson_-_Problema_boli.mp3",
     "author": "Пол Андерсон"
   },
   {
-    "downloaded": "err",
+    "downloaded": true,
     "number": 1453,
     "name": "Срок авансом",
     "links": "ftp://mds:mds@mds.kallisto.ru/Uil'jam_Tenn_-_Srok_avansom.mp3 || http://mds.kallisto.ru/Uil'jam_Tenn_-_Srok_avansom.mp3 || http://mds.datagrad.ru/download/Uil'jam_Tenn_-_Srok_avansom.mp3 || ftp://mds:mds@ftp.mds-club.ru/Uil'jam_Tenn_-_Srok_avansom.mp3 || http://mds.mds-club.ru/Uil'jam_Tenn_-_Srok_avansom.mp3",
     "author": "Уильям Тенн"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1452,
     "name": "Битва",
     "links": "ftp://mds:mds@mds.kallisto.ru/Robert_Shekli_-_Bitva.mp3 || http://mds.kallisto.ru/Robert_Shekli_-_Bitva.mp3 || http://mds.datagrad.ru/download/Robert_Shekli_-_Bitva.mp3 || ftp://mds:mds@ftp.mds-club.ru/Robert_Shekli_-_Bitva.mp3 || http://mds.mds-club.ru/Robert_Shekli_-_Bitva.mp3",
     "author": "Роберт Шекли"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1451,
     "name": "Доллар, девяносто восемь ($1.98)",
     "links": "ftp://mds:mds@mds.kallisto.ru/Artur_Pordzhess_-_$1.98_(Dollar,_devjanosto_vosem').mp3 || http://mds.kallisto.ru/Artur_Pordzhess_-_$1.98_(Dollar,_devjanosto_vosem').mp3 || http://mds.datagrad.ru/download/Artur_Pordzhess_-_$1.98_(Dollar,_devjanosto_vosem').mp3 || ftp://mds:mds@ftp.mds-club.ru/Artur_Pordzhess_-_$1.98_(Dollar,_devjanosto_vosem').mp3 || http://mds.mds-club.ru/Artur_Pordzhess_-_$1.98_(Dollar,_devjanosto_vosem').mp3",
     "author": "Артур Порджесс"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1450,
     "name": "До третьих петухов (часть 1 и 2 за 04.06.1998)",
     "links": "ftp://mds:mds@mds.kallisto.ru/Vasilij_Shukshin_-_Do_tret'ih_petuhov.mp3 || http://mds.kallisto.ru/Vasilij_Shukshin_-_Do_tret'ih_petuhov.mp3 || http://mds.datagrad.ru/download/Vasilij_Shukshin_-_Do_tret'ih_petuhov.mp3 || ftp://mds:mds@ftp.mds-club.ru/Vasilij_Shukshin_-_Do_tret'ih_petuhov.mp3 || http://mds.mds-club.ru/Vasilij_Shukshin_-_Do_tret'ih_petuhov.mp3",
     "author": "Василий Шукшин"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1449,
     "name": "Тайм-аут, или \"Вечерняя Москва\"",
     "links": "ftp://mds:mds@mds.kallisto.ru/Viktor_Pelevin_-_Tajm-aut_ili_'Vechernjaja_Moskva'.mp3 || http://mds.kallisto.ru/Viktor_Pelevin_-_Tajm-aut_ili_'Vechernjaja_Moskva'.mp3 || http://mds.datagrad.ru/download/Viktor_Pelevin_-_Tajm-aut_ili_'Vechernjaja_Moskva'.mp3 || ftp://mds:mds@ftp.mds-club.ru/Viktor_Pelevin_-_Tajm-aut_ili_'Vechernjaja_Moskva'.mp3 || http://mds.mds-club.ru/Viktor_Pelevin_-_Tajm-aut_ili_'Vechernjaja_Moskva'.mp3",
     "author": "Виктор Пелевин"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1447,
     "name": "Фурии",
     "links": "ftp://mds:mds@mds.kallisto.ru/Rodzher_Zheljazny_-_Furii.mp3 || http://mds.kallisto.ru/Rodzher_Zheljazny_-_Furii.mp3 || http://mds.datagrad.ru/download/Rodzher_Zheljazny_-_Furii.mp3 || ftp://mds:mds@ftp.mds-club.ru/Rodzher_Zheljazny_-_Furii.mp3 || http://mds.mds-club.ru/Rodzher_Zheljazny_-_Furii.mp3",
     "author": "Роджер Желязны"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1446,
     "name": "Вакансия",
     "links": "ftp://mds:mds@mds.kallisto.ru/Kejt_Laumer_-_Vakansija.mp3 || http://mds.kallisto.ru/Kejt_Laumer_-_Vakansija.mp3 || http://mds.datagrad.ru/download/Kejt_Laumer_-_Vakansija.mp3 || ftp://mds:mds@ftp.mds-club.ru/Kejt_Laumer_-_Vakansija.mp3 || http://mds.mds-club.ru/Kejt_Laumer_-_Vakansija.mp3",
     "author": "Кейт Лаумер"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1445,
     "name": "Реликт войны",
     "links": "ftp://mds:mds@mds.kallisto.ru/Kejt_Laumer_-_Relikt_vojny.mp3 || http://mds.kallisto.ru/Kejt_Laumer_-_Relikt_vojny.mp3 || http://mds.datagrad.ru/download/Kejt_Laumer_-_Relikt_vojny.mp3 || ftp://mds:mds@ftp.mds-club.ru/Kejt_Laumer_-_Relikt_vojny.mp3 || http://mds.mds-club.ru/Kejt_Laumer_-_Relikt_vojny.mp3",
     "author": "Кейт Лаумер"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1444,
     "name": "Динохромный",
     "links": "ftp://mds:mds@mds.kallisto.ru/Kejt_Laumer_-_Dinohromnyj.mp3 || http://mds.kallisto.ru/Kejt_Laumer_-_Dinohromnyj.mp3 || http://mds.datagrad.ru/download/Kejt_Laumer_-_Dinohromnyj.mp3 || ftp://mds:mds@ftp.mds-club.ru/Kejt_Laumer_-_Dinohromnyj.mp3 || http://mds.mds-club.ru/Kejt_Laumer_-_Dinohromnyj.mp3",
     "author": "Кейт Лаумер"
   },
   {
-    "downloaded": false,
+    "downloaded": true,
     "number": 1443,
     "name": "Дети Сатаны",
     "links": "ftp://mds:mds@mds.kallisto.ru/Spajder_i_Dzhin_Robinson_-_Deti_Satany.mp3 || http://mds.kallisto.ru/Spajder_i_Dzhin_Robinson_-_Deti_Satany.mp3 || http://mds.datagrad.ru/download/Spajder_i_Dzhin_Robinson_-_Deti_Satany.mp3 || ftp://mds:mds@ftp.mds-club.ru/Spajder_i_Dzhin_Robinson_-_Deti_Satany.mp3",
