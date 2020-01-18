@@ -3,70 +3,79 @@ import json
 import logging
 import os
 import time
-from urllib.request import urlretrieve
+from urllib.request import urlretrieve, FancyURLopener
 
 logging.basicConfig(format='%(message)s', level=logging.INFO)
 
 
-def reporthook(count, block_size, total_size):
-    global start_time
-    if count == 0:
-        start_time = time.time()
-        return
+class Downloader:
+    def __init__(self, batch_size=30):
+        self.batch_size = batch_size
+        with open('input/data.json', 'r') as f:
+            data = f.read()
+            data = json.loads(data)
+            data.sort(key=lambda x: x['number'], reverse=True)
+        self.data = data
 
-    duration = time.time() - start_time
+    @staticmethod
+    def reporthook(count: int, block_size: int, total_size: int) -> None:
+        global start_time
+        if count == 0:
+            start_time = time.time()
+            return
 
-    print(' '*50, end='\r')
+        duration = time.time() - start_time
 
-    if total_size > 0:
-        progress_size = int(count * block_size)/1000000
-        speed = int(progress_size / (1024 * duration))
-        percent = int(count * block_size * 100 / total_size)
-        print(f"... {percent}%, {progress_size:.0f} MB, {speed} KB/s, {duration:.0f} секунд", end='\r')
-        if percent >= 100:
-            print('\n')
+        print(' '*50, end='\r')
 
-    else:
-        print(f"... {int(count*block_size)/1000000:.2f} MB, {duration:.0f} секунд", end='\r')
+        progress_size = int(count * block_size) / 1000000
+        if total_size > 0:
+            percent = int(count * block_size * 100 / total_size)
+            print(f"... {percent}%, {progress_size:.0f} MB, {duration:.0f} секунд", end='\r')
+            if percent >= 100:
+                print('\n')
+        else:
+            print(f"... {progress_size:.2f} MB, {duration:.0f} секунд", end='\r')
 
+    def download_batch(self) -> None:
+        downloaded_counter = 0
+        item_idx = 0
+        data = self.data
+        while downloaded_counter < self.batch_size and item_idx <= len(self.data):
+            item = data[item_idx]
+            if item['downloaded'] in [False, 'err']:
+                filename = f"{item['number']}.{item['author']} - {item['name']}.mp3".replace('/', '_')
+                logging.info(filename)
+                links = item['links'].split(' || ')
+                for index, link in enumerate(links):
+                    logging.info(f"Ссылка {index + 1} из {len(links)}")
+                    try:
+                        urlretrieve(link, f'output/{filename}', self.reporthook)
+                        item['downloaded'] = True
+                        downloaded_counter += 1
+                        break
+                    except (Exception, KeyboardInterrupt) as e:
+                        logging.info(f'Отмена ({e})')
+                        continue
+                else:
+                    data[item_idx]['downloaded'] = 'err'
 
-def download():
-    with open('input/data.json', 'r') as f:
-        data = f.read()
-        data = json.loads(data)
+                with codecs.open('input/data.json', 'w+', encoding='utf-8') as f:
+                    f.write(json.dumps(data, ensure_ascii=False, indent=2))
 
-    data.sort(key=lambda x: x['number'], reverse=True)
+            item_idx += 1
+        else:
+            logging.info('')
+            logging.info('Готово!')
 
-    counter = 0
-    line = 0
-    while counter < 30:
-        if data[line]['downloaded'] in [False, 'err']:
-            filename = f"{data[line]['number']}.{data[line]['author']} - {data[line]['name']}.mp3".replace('/', '_')
-            logging.info(filename)
-            for index, link in enumerate(data[line]['links'].split(' || ')):
-                try:
-                    logging.info(f"Ссылка {index + 1} из {len(data[line]['links'].split(' || '))}")
-                    urlretrieve(link, f'output/{filename}', reporthook)
-                    data[line]['downloaded'] = True
-                    break
-                except (Exception, KeyboardInterrupt) as e:
-                    logging.info(f'Отмена ({e})')
-                    continue
-            else:
-                data[line]['downloaded'] = 'err'
+        self.cleanup()
 
-            with codecs.open('input/data.json', 'w+', encoding='utf-8') as f:
-                f.write(json.dumps(data, ensure_ascii=False, indent=2))
-            counter += 1
-        line += 1
-    else:
-        print(' ')
-        logging.info('Готово!')
-
-    for f in os.listdir('output'):
-        if os.path.getsize('output/' + f) < 1000000:
-            os.remove('output/' + f)
+    @staticmethod
+    def cleanup() -> None:
+        for f in os.listdir('output'):
+            if os.path.getsize('output/' + f) < 1000000:
+                os.remove('output/' + f)
 
 
 if __name__ == '__main__':
-    download()
+    Downloader().download_batch()
