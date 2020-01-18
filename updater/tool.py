@@ -15,9 +15,11 @@ def change():
         try:
             original_node = list(filter(lambda x: x['name'] == node['name'], original_data))[0]
         except IndexError:
-            original_node = {'downloaded': False}
+            original_node = {'downloaded': False, 'links': ''}
 
         node['downloaded'] = original_node['downloaded']
+        node['links'] = set(node['links'].split(' || ') + original_node['links'].split(' || '))
+        node['links'] = ' || '.join([str(x) for x in node['links'] if x])
 
     with codecs.open('data_synced.json', 'w+', encoding='utf-8') as f:
         f.write(json.dumps(new_data, ensure_ascii=False, indent=2))

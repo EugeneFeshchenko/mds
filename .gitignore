@@ -3,3 +3,5 @@
 .idea/
 download_cli/output
 mds_env
+updater/*.json
+scrapper/input.json
