@@ -1,28 +1,37 @@
 import argparse
-import codecs
-import json
 import logging
 import os
+import sqlite3
 import time
+from enum import Enum
 from urllib.request import urlretrieve
 
-logging.basicConfig(format='%(message)s', level=logging.INFO)
+
+logging.basicConfig(format="%(message)s", level=logging.INFO)
+
+
+class Status(str, Enum):
+    PENDING = "pending"
+    COMPLETED = "completed"
+    FAILED = "failed"
 
 
 class Downloader:
     def __init__(self):
-        with open('input/data.json', 'r') as f:
-            data = f.read()
-            data = json.loads(data)
-            data.sort(key=lambda x: x['number'], reverse=True)
-        self.data = data
-
-        parser = argparse.ArgumentParser(description='Скачивает файлы с сайта MDS.')
+        parser = argparse.ArgumentParser(description="Скачивает файлы с сайта MDS.")
         parser.add_argument(
-            '-n', metavar='Number', default=30, type=int, required=False, help='количество файлов(30 по умолчанию)'
+            "-n",
+            metavar="Number",
+            default=3,
+            type=int,
+            required=False,
+            help="количество файлов(10 по умолчанию)",
         )
         self.args = parser.parse_args()
         self.batch_size = self.args.n
+
+        self.conn = sqlite3.connect("input/mds.db")
+        self.cursor = self.conn.cursor()
 
     @staticmethod
     def reporthook(count: int, block_size: int, total_size: int) -> None:
@@ -42,44 +51,55 @@ class Downloader:
         else:
             print(f"... {progress_size:.2f} MB, {duration:.0f} секунд", end='\r')
 
-    def save_data(self) -> None:
-        with codecs.open('input/data.json', 'w+', encoding='utf-8') as f:
-            f.write(json.dumps(self.data, ensure_ascii=False, indent=2))
+    def set_book_status(self, book_id, status):
+        self.cursor.execute(
+            """
+            UPDATE books
+            SET status = ?
+            WHERE id = ?
+            """,
+            (status, book_id),
+        )
+        self.conn.commit()
 
     def download_batch(self) -> None:
-        downloaded_counter = 0
+        self.cursor.execute(
+            """
+            SELECT * FROM books
+            WHERE status = ?
+            ORDER BY number ASC
+            LIMIT ?
+        """,
+            ("pending", self.batch_size),
+        )
 
-        for item in filter(lambda x: x['downloaded'] != True, self.data):
-            filename = f"{item['number']}.{item['author']} - {item['name']}.mp3".replace('/', '_')
+        for item in self.cursor.fetchall():
+            filename = f"{item[1]}.{item[4]} - {item[2]}.mp3".replace('/', '_')
             logging.info(filename)
-            links = item['links'].split(' || ')
+            links = item[3].split(' || ')
             for index, link in enumerate(links):
                 logging.info(f"Ссылка {index + 1} из {len(links)}")
                 try:
-                    urlretrieve(link, f'output/{filename}', self.reporthook)
-                    item['downloaded'] = True
-                    downloaded_counter += 1
+                    urlretrieve(url=link, filename=f"output/{filename}", reporthook=self.reporthook)
+                    self.set_book_status(item[0], Status.COMPLETED)
                     break
                 except (Exception, KeyboardInterrupt) as e:
-                    logging.info(f'Отмена ({e})')
+                    logging.info(f"Отмена ({e})")
                     continue
             else:
-                item['downloaded'] = 'err'
+                self.set_book_status(item[0], Status.FAILED)
 
-            self.save_data()
             logging.info('_' * 50)
 
-            if downloaded_counter >= self.batch_size:
-                logging.info(f'Готово! {downloaded_counter}')
-                self.cleanup()
-                break
+        self.cleanup()
+        self.conn.close()
 
     @staticmethod
     def cleanup() -> None:
-        for f in os.listdir('output'):
-            if os.path.getsize('output/' + f) < 1000000:
-                os.remove('output/' + f)
+        for f in os.listdir("output"):
+            if os.path.getsize("output/" + f) < 1000000:
+                os.remove("output/" + f)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     Downloader().download_batch()
