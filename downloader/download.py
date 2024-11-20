@@ -1,13 +1,11 @@
 import argparse
-import logging
-import os
 import sqlite3
-import time
 from enum import Enum
-from urllib.request import urlretrieve
+from ftplib import FTP
+from urllib.parse import urlparse
 
-
-logging.basicConfig(format="%(message)s", level=logging.INFO)
+import requests
+from tqdm import tqdm
 
 
 class Status(str, Enum):
@@ -18,87 +16,102 @@ class Status(str, Enum):
 
 class Downloader:
     def __init__(self):
-        parser = argparse.ArgumentParser(description="Скачивает файлы с сайта MDS.")
+        parser = argparse.ArgumentParser(description="Downloads MDS files.")
         parser.add_argument(
             "-n",
             metavar="Number",
-            default=3,
+            default=10,
             type=int,
             required=False,
-            help="количество файлов(10 по умолчанию)",
+            help="Number of files to download (10 by default)",
         )
         self.args = parser.parse_args()
         self.batch_size = self.args.n
 
-        self.conn = sqlite3.connect("input/mds.db")
-        self.cursor = self.conn.cursor()
+        self.input_db = "input/mds.db"
+        self.output_folder = "output"
 
-    @staticmethod
-    def reporthook(count: int, block_size: int, total_size: int) -> None:
-        global start_time
-        if count == 0:
-            start_time = time.time()
-            return
+    def download_http(self, url, filename, ui_filename):
+        response = requests.get(url, stream=True)
+        total_size = int(response.headers.get("content-length", 0))
 
-        duration = time.time() - start_time
+        with open(f"{self.output_folder}/{filename}", "wb") as file, tqdm(
+            desc=ui_filename,
+            total=total_size,
+            unit="B",
+            unit_scale=True,
+            unit_divisor=1024,
+        ) as bar:
+            for data in response.iter_content(chunk_size=1024):
+                file.write(data)
+                bar.update(len(data))
 
-        print(' '*50, end='\r')
+    def download_ftp(self, url, filename, ui_filename):
+        parsed_url = urlparse(url)
 
-        progress_size = int(count * block_size) / 1000000
-        if total_size > 0:
-            percent = int(count * block_size * 100 / total_size)
-            print(f"... {percent}%, {progress_size:.0f} MB, {duration:.0f} секунд", end='\r')
-        else:
-            print(f"... {progress_size:.2f} MB, {duration:.0f} секунд", end='\r')
+        with FTP(parsed_url.hostname) as ftp:
+            ftp.login(parsed_url.username, parsed_url.password)
 
-    def set_book_status(self, book_id, status):
-        self.cursor.execute(
-            """
-            UPDATE books
-            SET status = ?
-            WHERE id = ?
-            """,
-            (status, book_id),
-        )
-        self.conn.commit()
+            try:
+                total_size = ftp.size(parsed_url.path)
+            except Exception:
+                total_size = None
+
+            with open(f"{self.output_folder}/{filename}", "wb") as file, tqdm(
+                desc=ui_filename,
+                total=total_size,
+                unit="B",
+                unit_scale=True,
+                unit_divisor=1024,
+                dynamic_ncols=True,
+            ) as bar:
+
+                def callback(data):
+                    file.write(data)
+                    bar.update(len(data))
+
+                ftp.retrbinary(f"RETR {parsed_url.path[1:]}", callback, blocksize=1024)
 
     def download_batch(self) -> None:
-        self.cursor.execute(
-            """
-            SELECT * FROM books
-            WHERE status = ?
-            ORDER BY number ASC
-            LIMIT ?
-        """,
-            ("pending", self.batch_size),
-        )
+        with sqlite3.connect(self.input_db) as conn:
+            cursor = conn.cursor()
+            cursor.execute(
+                """
+                SELECT * FROM books
+                WHERE status = ?
+                ORDER BY number ASC
+                LIMIT ?
+            """,
+                ("pending", self.batch_size),
+            )
 
-        for item in self.cursor.fetchall():
-            filename = f"{item[1]}.{item[4]} - {item[2]}.mp3".replace('/', '_')
-            logging.info(filename)
-            links = item[3].split(' || ')
-            for index, link in enumerate(links):
-                logging.info(f"Ссылка {index + 1} из {len(links)}")
-                try:
-                    urlretrieve(url=link, filename=f"output/{filename}", reporthook=self.reporthook)
-                    self.set_book_status(item[0], Status.COMPLETED)
-                    break
-                except (Exception, KeyboardInterrupt) as e:
-                    logging.info(f"Отмена ({e})")
-                    continue
-            else:
-                self.set_book_status(item[0], Status.FAILED)
-
-            logging.info('_' * 50)
-
-        self.cleanup()
-        self.conn.close()
-
-    @staticmethod
-    def cleanup() -> None:
-        for f in os.listdir("output"):
-            if os.path.getsize("output/" + f) < 1000000:
-                os.remove("output/" + f)
+            for item in cursor.fetchall():
+                filename = f"{item[1]}.{item[4]} - {item[2]}.mp3".replace("/", "_")
+                ui_filename = f"{item[1]:<4} {item[4]:<20} {item[2]:<40}"
+                links = sorted(item[3].split(" || "), key=lambda s: not s.startswith("http"))
+                for index, link in enumerate(links):
+                    try:
+                        if link.startswith("http"):
+                            self.download_http(link, filename, ui_filename)
+                        elif link.startswith("ftp://"):
+                            self.download_ftp(link, filename, ui_filename)
+                    except Exception:
+                        status = Status.FAILED
+                        print(f"Error downloading {link}")
+                        continue
+                    else:
+                        status = Status.COMPLETED
+                        break
+                    finally:
+                        cursor.execute(
+                            """
+                            UPDATE books
+                            SET status = ?
+                            WHERE id = ?
+                            """,
+                            (status, item[0]),
+                        )
+                        conn.commit()
 
 
 if __name__ == "__main__":
