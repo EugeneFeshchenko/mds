@@ -86,10 +86,10 @@ class Downloader:
             )
 
             for item in cursor.fetchall():
-                filename = f"{item[2]} ({item[4]}).mp3".replace("/", "_")
-                ui_filename = f"{item[4]:<20} {item[2]:<40}"
-                links = sorted(item[3].split(" || "), key=lambda s: not s.startswith("http"))
-                for index, link in enumerate(links):
+                filename = f"{item[1]} ({item[3]}).mp3".replace("/", "_")
+                ui_filename = f"{item[3]:<20} {item[1]:<40}"
+                links = sorted(item[2].split(" || "), key=lambda s: not s.startswith("http"))
+                for link in links:
                     try:
                         if link.startswith("http"):
                             self.download_http(link, filename, ui_filename)
@@ -113,7 +113,6 @@ class Downloader:
                             (status, item[0]),
                         )
                         conn.commit()
-
 
 if __name__ == "__main__":
     Downloader().download_batch()
