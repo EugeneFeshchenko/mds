@@ -1,10 +1,7 @@
 *.pyc
 *~
 .idea/
-download_cli/output
-mds_env
 updater/*.json
-scrapper/input.json
 .DS_Store
 venv
 downloader/output
