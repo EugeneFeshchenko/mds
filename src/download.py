@@ -28,7 +28,7 @@ class Downloader:
         self.args = parser.parse_args()
         self.batch_size = self.args.n
 
-        self.input_db = "input/mds.db"
+        self.input_db = "./mds.db"
         self.output_folder = "output"
 
     def download_http(self, url, filename, ui_filename):
@@ -79,15 +79,15 @@ class Downloader:
                 """
                 SELECT * FROM books
                 WHERE status = ?
-                ORDER BY number ASC
+                ORDER BY name ASC
                 LIMIT ?
             """,
                 ("pending", self.batch_size),
             )
 
             for item in cursor.fetchall():
-                filename = f"{item[1]}.{item[4]} - {item[2]}.mp3".replace("/", "_")
-                ui_filename = f"{item[1]:<4} {item[4]:<20} {item[2]:<40}"
+                filename = f"{item[2]} ({item[4]}).mp3".replace("/", "_")
+                ui_filename = f"{item[4]:<20} {item[2]:<40}"
                 links = sorted(item[3].split(" || "), key=lambda s: not s.startswith("http"))
                 for index, link in enumerate(links):
                     try:
@@ -95,9 +95,10 @@ class Downloader:
                             self.download_http(link, filename, ui_filename)
                         elif link.startswith("ftp://"):
                             self.download_ftp(link, filename, ui_filename)
-                    except Exception:
+                    except Exception as e:
                         status = Status.FAILED
                         print(f"Error downloading {link}")
+                        print(e)
                         continue
                     else:
                         status = Status.COMPLETED

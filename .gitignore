@@ -1,7 +1,6 @@
 *.pyc
 *~
 .idea/
-updater/*.json
 .DS_Store
 venv
-downloader/output
+output/
